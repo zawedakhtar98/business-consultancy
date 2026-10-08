@@ -6,8 +6,8 @@
         <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
             <div class="container">
 
-                <h1 class="display-4 fw-bold text-white mb-3">Payroll & Compliance</h1>
-                <p class="lead text-white-50 mx-auto" style="max-width: 800px;">Accurate processing integrated with rigorous legal adherence to protect your organization.</p>
+                <h1 class="display-4 fw-bold text-white mb-3">Payroll Management</h1>
+                <p class="lead text-white-50 mx-auto" style="max-width: 800px;">Accurate, timely payroll processing with full statutory deductions and filings.</p>
             </div>
         </div>
     </div>
@@ -17,9 +17,10 @@
         <div class="container">
             <div class="row align-items-center flex-lg-row-reverse">
                 <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-5">
-                    <h2 class="text-primary-navy mb-4">Risk-Free Operations</h2>
+                    <span class="text-accent-gold fw-bold text-uppercase tracking-wide">07 | Accurate Payroll Management</span>
+                    <h2 class="text-primary-navy mt-2 mb-4">Compliance-Led Payroll Operations</h2>
                     <p class="lead text-muted mb-4">Navigating India's complex labor regulations requires specialized expertise.</p>
-                    <p>We offer comprehensive payroll management coupled with meticulous statutory compliance services (PF, ESI, PT, LWF). Our robust processes guarantee accurate, timely disbursements and flawless record-keeping, protecting your organization from regulatory penalties, legal disputes, and reputational risk.</p>
+                    <p>We offer comprehensive payroll management coupled with meticulous statutory compliance services (PF, ESI, PT, LWF). Our robust processes guarantee error-free, timely payroll processing with full statutory deductions and filings, so your people are paid right and on time, while keeping your organization inspection-ready and protected from penalties.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4">
@@ -32,7 +33,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="bg-light-gray p-4 rounded h-100">
-                                <i class="fas fa-shield-check fa-2x text-accent-gold mb-3"></i>
+                                <i class="fas fa-shield-alt fa-2x text-accent-gold mb-3"></i>
                                 <h5 class="text-dark">Statutory Filings</h5>
                                 <p class="small text-muted mb-0">PF, ESI, PT, and LWF registrations, deductions, and monthly returns.</p>
                             </div>
@@ -61,8 +62,8 @@
     <section class="section-padding bg-light-gray">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="text-primary-navy">Our Payroll & Compliance Process</h2>
-                <p class="text-muted">A highly structured methodology ensuring 100% adherence.</p>
+                <h2 class="text-primary-navy">Our Payroll &amp; Compliance Process</h2>
+                <p class="text-muted">A structured &amp; compliance-focused methodology ensuring complete statutory adherence.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -86,7 +87,7 @@
                         <div class="timeline-step">
                             <div class="step-badge">Step 3</div>
                             <div class="step-content pb-4">
-                                <h5 class="mb-2">Disbursement & Payslips</h5>
+                                <h5 class="mb-2">Disbursement &amp; Payslips</h5>
                                 <p class="text-muted small">Timely crediting of salaries to employee accounts and secure distribution of payslips.</p>
                                 <div class="step-line"></div>
                             </div>
@@ -94,7 +95,7 @@
                         <div class="timeline-step">
                             <div class="step-badge">Step 4</div>
                             <div class="step-content pb-4">
-                                <h5 class="mb-2">Statutory Remittance & Filing</h5>
+                                <h5 class="mb-2">Statutory Remittance &amp; Filing</h5>
                                 <p class="text-muted small">Depositing PF/ESI dues and filing monthly/annual returns with government authorities.</p>
                                 <div class="step-line"></div>
                             </div>
@@ -108,8 +109,8 @@
     <!-- CTA Band -->
     <section class="cta-band">
         <div class="container">
-            <h2>Ensure 100% <span>Statutory Compliance today</span></h2>
-            <p class="lead mb-4 opacity-75">Outsource your payroll and compliance to the experts.</p>
+            <h2>Ensure <span>Compliance-Led Workforce Management</span> Today</h2>
+            <p class="lead mb-4 opacity-75">Outsource your payroll and statutory management to the experts.</p>
             <a href="contact.php" class="btn btn-accent btn-lg px-5 py-3 shadow">Get in Touch</a>
         </div>
     </section>

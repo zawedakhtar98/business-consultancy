@@ -12,6 +12,14 @@
   --font-body: 'Inter', sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--text-dark);
@@ -50,12 +58,60 @@ h6 {
 /* Navigation */
 .navbar {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  max-width: calc(100% - 60px);
+  margin-right: 0.5rem;
+  padding: 0;
 }
 
 .navbar-brand img {
-  max-height: 60px;
+  max-height: 52px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: max-height 0.2s ease;
+}
+
+.logo-name {
+  font-size: 21px;
+  font-weight: 700;
+  margin-left: 10px;
+  line-height: 1.15;
+  color: var(--primary-color);
+  letter-spacing: -0.01em;
+}
+
+.logo-trade {
+  font-size: 11px;
+  font-weight: 700;
+  position: relative;
+  top: -11px;
+  left: 0;
+}
+
+.navbar-toggler {
+  padding: 0.35rem 0.55rem;
+  font-size: 1.15rem;
+  border-color: rgba(11, 46, 92, 0.2);
+  flex-shrink: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.15rem rgba(11, 46, 92, 0.15);
 }
 
 .nav-link {
@@ -341,6 +397,29 @@ h6 {
   padding: 60px 0 20px;
 }
 
+.footer img {
+  max-height: 64px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.footer-logo {
+  font-size: 23px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.footer-logo .logo-trade {
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+  top: -15px;
+  left: 0;
+}
+
 .footer h5 {
   color: var(--white);
   margin-bottom: 1.5rem;
@@ -478,17 +557,365 @@ h6 {
   opacity: 0.4;
 }
 
-@media (max-width: 768px) {
+/* ==========================================================================
+   Comprehensive Tablet & Mobile Responsive Rules
+   ========================================================================== */
+
+/* Tablets & Below (max-width: 991.98px) */
+@media (max-width: 991.98px) {
   .hero-headline {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    line-height: 1.25;
   }
 
+  .hero-subheadline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .navbar-brand img {
+    max-height: 44px;
+    border-radius: 6px;
+  }
+
+  .logo-name {
+    font-size: 17px;
+    margin-left: 8px;
+  }
+
+  .logo-trade {
+    font-size: 9px;
+    top: -9px;
+  }
+
+  /* Collapsed Mobile/Tablet Navigation Drawer */
+  .navbar-collapse {
+    background: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-top: 0.75rem;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    align-items: stretch !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.65rem 0.75rem !important;
+    margin-left: 0 !important;
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    background-color: #f0f4f8;
+  }
+
+  /* Mobile/Tablet Dropdown Menus */
+  .navbar .dropdown-menu {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #f7f9fc !important;
+    border-radius: 8px !important;
+    padding: 0.5rem !important;
+    margin: 0.25rem 0 0.5rem !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  .dropdown-menu-wide {
+    min-width: 100% !important;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 4px;
+    white-space: normal !important;
+  }
+
+  .dropdown-item .item-desc {
+    display: block;
+    font-size: 0.75rem;
+  }
+
+  /* Display Typography */
+  .display-4 {
+    font-size: 2.2rem !important;
+    line-height: 1.25;
+  }
+
+  .display-5 {
+    font-size: 1.9rem !important;
+  }
+
+  .display-6 {
+    font-size: 1.6rem !important;
+  }
+
+  /* Process steps: eliminate connecting line to avoid overflow */
   .process-step::after {
-    display: none;
+    display: none !important;
   }
 
   .process-step {
     margin-bottom: 2rem;
+  }
+}
+
+/* Medium Tablets & Mobile Devices (max-width: 767.98px) */
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  /* Responsive Page Header Banners across all pages */
+  section.position-relative[style*="height"],
+  div.position-relative[style*="height"] {
+    height: auto !important;
+    min-height: 280px !important;
+    display: flex;
+    align-items: center;
+    padding: 60px 0 40px !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  section.position-relative[style*="height"] > img,
+  div.position-relative[style*="height"] > img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  section.position-relative[style*="height"] > .position-absolute,
+  div.position-relative[style*="height"] > .position-absolute {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    z-index: 2 !important;
+  }
+
+  /* Sector Navigation Pills */
+  .btn-outline-primary.rounded-pill {
+    padding: 0.35rem 0.8rem !important;
+    font-size: 0.82rem !important;
+  }
+
+  /* Footer responsiveness */
+  .footer {
+    padding: 45px 0 20px;
+  }
+
+  .footer img {
+    max-height: 45px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-logo {
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-bottom: 0;
+  }
+
+  .footer-logo .logo-trade {
+    font-size: 9px;
+    top: -9px;
+  }
+}
+
+/* Smartphones in Portrait (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  .navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar-brand {
+    max-width: calc(100% - 54px);
+  }
+
+  .navbar-brand img {
+    max-height: 38px;
+    border-radius: 5px;
+  }
+
+  .logo-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 6px;
+  }
+
+  .logo-trade {
+    font-size: 8px;
+    top: -7px;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.45rem;
+    font-size: 1.05rem;
+  }
+
+  /* Typography for Mobile */
+  h1, .h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .display-4 {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .display-5 {
+    font-size: 1.4rem !important;
+  }
+
+  .display-6 {
+    font-size: 1.3rem !important;
+  }
+
+  h2, .h2 {
+    font-size: 1.35rem !important;
+  }
+
+  h3, .h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .hero-headline {
+    font-size: 1.75rem !important;
+    line-height: 1.22;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subheadline {
+    font-size: 0.92rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .lead {
+    font-size: 0.95rem !important;
+    line-height: 1.6;
+  }
+
+  .section-padding {
+    padding: 35px 0;
+  }
+
+  /* Quick Navigation Pills on Mobile */
+  .btn-outline-primary.rounded-pill {
+    padding: 0.3rem 0.65rem !important;
+    font-size: 0.76rem !important;
+    line-height: 1.35;
+    max-width: 100%;
+    word-break: break-word;
+  }
+
+  /* Card paddings on Mobile */
+  .sector-detail-card,
+  .diff-card,
+  .service-card,
+  .matter-card,
+  .matter-card-premium,
+  .testimonial-card,
+  .calc-body,
+  .calc-header {
+    padding: 1.25rem !important;
+  }
+
+  .sector-icon-badge {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.85rem;
+  }
+
+  .hero-slide {
+    padding: 60px 0;
+    min-height: 60vh;
+  }
+
+  /* Full width action buttons on mobile */
+  .hero-content .btn-lg {
+    width: 100%;
+  }
+
+  .cta-band {
+    padding: 40px 0;
+  }
+
+  .cta-band .btn-lg {
+    width: auto;
+    max-width: 100%;
+  }
+
+  /* Apprenticeship Timeline on Mobile */
+  .timeline-step {
+    padding-left: 70px;
+    min-height: 75px;
+  }
+
+  .timeline-step::before {
+    left: 30px;
+  }
+
+  .step-badge {
+    width: 50px;
+    font-size: 0.8rem;
+    left: 5px;
+  }
+}
+
+/* Extra Small Smartphones (< 380px) */
+@media (max-width: 380px) {
+  .navbar-brand img {
+    max-height: 32px;
+  }
+
+  .logo-name {
+    font-size: 12.5px;
+    margin-left: 5px;
+  }
+
+  .logo-trade {
+    font-size: 7px;
+    top: -6px;
+  }
+
+  .footer-logo {
+    font-size: 15px;
+  }
+
+  .display-4 {
+    font-size: 1.4rem !important;
   }
 }
 
@@ -585,7 +1012,9 @@ h6 {
 
 .city-card:hover .city-img-wrapper {
   transform: scale(1.05);
-}/* Matter Card (Why Apprenticeships Matter) */
+}
+
+/* Matter Card (Why Apprenticeships Matter) */
 .matter-card {
   background-color: #f4f6f8;
   border: 1px solid #cbd5e1;
@@ -595,20 +1024,24 @@ h6 {
   height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .matter-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
 }
+
 .matter-card h5 {
   color: #111827;
   font-weight: 700;
   margin-bottom: 0.75rem;
 }
+
 .matter-card p {
   color: #4b5563;
   font-size: 0.95rem;
   margin-bottom: 0;
 }
+
 /* Premium Matter Card */
 .matter-card-premium {
   background-color: #ffffff;
@@ -616,11 +1049,12 @@ h6 {
   padding: 2rem;
   height: 100%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0,0,0,0.03);
+  border: 1px solid rgba(0, 0, 0, 0.03);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
+
 .matter-card-premium::before {
   content: '';
   position: absolute;
@@ -632,17 +1066,20 @@ h6 {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .matter-card-premium:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
+
 .matter-card-premium:hover::before {
   opacity: 1;
 }
+
 .matter-icon {
   width: 56px;
   height: 56px;
-  background-color: #f0f4f8; 
+  background-color: #f0f4f8;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -651,13 +1088,342 @@ h6 {
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
+
 .matter-card-premium:hover .matter-icon {
   background-color: var(--primary-color);
   color: #fff;
   transform: scale(1.1);
 }
+
+/* Dropdown Menus */
+.navbar .dropdown-menu {
+  border: 1px solid rgba(11, 46, 92, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem 0;
+  margin-top: 0.5rem;
+  background-color: var(--white);
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item.dropdown:hover>.dropdown-menu {
+    display: block;
+    animation: fadeInDown 0.25s ease forwards;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  font-weight: 500;
+  color: var(--primary-color);
+  padding: 0.65rem 1.25rem;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  white-space: normal;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #f4f7fb;
+  color: var(--accent-color);
+  padding-left: 1.5rem;
+}
+
+.dropdown-item .item-desc {
+  display: block;
+  font-size: 0.78rem;
+  color: #6c757d;
+  font-weight: 400;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.dropdown-menu-wide {
+  min-width: 320px;
+}
+
+.dropdown-header-custom {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  font-weight: 700;
+  padding: 0.5rem 1.25rem 0.25rem;
+}
+
 /* Active Navigation Link */
 .navbar-nav .nav-link.active {
-    color: var(--accent-color) !important;
-    font-weight: 600;
+  color: var(--accent-color) !important;
+  font-weight: 600;
+}
+
+/* IMPACT Value Cards */
+.value-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  border-left: 5px solid var(--accent-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+  border-left-color: var(--primary-color);
+}
+
+.value-card .value-letter {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+}
+
+.value-card h4 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+/* What Makes Us Different (10 Points) */
+.diff-card {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 100%;
+  border: 1px solid rgba(11, 46, 92, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.diff-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent-color);
+}
+
+.diff-num {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.diff-card h5 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.diff-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Detailed Sector Cards */
+.sector-detail-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  border: 1px solid rgba(11, 46, 92, 0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.sector-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+  border-color: rgba(212, 160, 23, 0.4);
+}
+
+.sector-icon-badge {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.sector-subheading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 0.75rem;
+}
+
+.sector-list {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.sector-list li {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 0.35rem;
+}
+
+.sector-highlight-box {
+  background: #f8fafc;
+  border-left: 3px solid var(--accent-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.88rem;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+.sector-highlight-box strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card .quote-icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .quote-text {
+  font-style: italic;
+  color: #4a5568;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-card .author-name {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.testimonial-card .author-role {
+  font-size: 0.82rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* FAQ Accordion */
+.faq-accordion .accordion-item {
+  border: 1px solid rgba(11, 46, 92, 0.1);
+  border-radius: 8px !important;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.faq-accordion .accordion-button {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--primary-color);
+  background-color: var(--white);
+  padding: 1.25rem 1.5rem;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  color: var(--accent-color);
+  background-color: #f7f9fc;
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(212, 160, 23, 0.3);
+}
+
+.faq-accordion .accordion-body {
+  padding: 1.25rem 1.5rem;
+  color: #4b5563;
+  line-height: 1.65;
+  background-color: #f7f9fc;
+  border-top: 1px solid rgba(11, 46, 92, 0.05);
+}
+
+/* Apprenticeship Calculator */
+.calc-card {
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(11, 46, 92, 0.1);
+  overflow: hidden;
+}
+
+.calc-header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #153e75 100%);
+  color: var(--white);
+  padding: 2rem;
+}
+
+.calc-body {
+  padding: 2.5rem 2rem;
+}
+
+.calc-result-box {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%);
+  border: 2px dashed var(--accent-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.calc-savings-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  font-family: var(--font-heading);
+}
+
+/* LinkedIn QR Card */
+.linkedin-qr-card {
+  background: #ffffff;
+  border: 1px solid rgba(11, 46, 92, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.qr-box {
+  display: inline-block;
+  padding: 10px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }

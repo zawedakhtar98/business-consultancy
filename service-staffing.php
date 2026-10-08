@@ -7,7 +7,7 @@
             <div class="container">
 
                 <h1 class="display-4 fw-bold text-white mb-3">Contract Staffing</h1>
-                <p class="lead text-white-50 mx-auto" style="max-width: 800px;">Flexible, scalable, and fully compliant workforce solutions for dynamic business needs.</p>
+                <p class="lead text-white-50 mx-auto" style="max-width: 800px;">Flexible, compliant manpower solutions for project-based, seasonal, and ongoing requirements.</p>
             </div>
         </div>
     </div>
@@ -17,9 +17,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
-                    <h2 class="text-primary-navy mb-4">Agile Talent Deployment</h2>
+                    <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Agile Talent Deployment</span>
+                    <h2 class="text-primary-navy mt-2 mb-4">Flexible Manpower Aligned to Your Business Objectives</h2>
                     <p class="lead text-muted mb-4">Adapt to market demands rapidly with our contract staffing solutions.</p>
-                    <p>We provide pre-screened, qualified personnel for both short-term projects and long-term operational needs. We manage the complete employee lifecycle—from recruitment and onboarding to payroll and offboarding—absorbing administrative burdens and mitigating co-employment risks so you can focus strictly on core business activities and growth.</p>
+                    <p>We provide pre-screened, qualified personnel for project-based, seasonal, and ongoing business requirements. We manage the complete employee lifecycle—from recruitment and onboarding to payroll and offboarding—absorbing administrative burdens and mitigating co-employment risks so you can focus strictly on core business activities and growth.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4">
@@ -62,7 +63,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="text-primary-navy">Our Staffing Process</h2>
-                <p class="text-muted">A streamlined, risk-free approach to workforce optimization.</p>
+                <p class="text-muted">A streamlined, structured &amp; compliance-focused approach to workforce optimization.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">

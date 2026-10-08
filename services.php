@@ -1,18 +1,18 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Page Header -->
-    <section class="position-relative" style="height: 350px;">
+    <section class="position-relative" style="height: 360px;">
         <img src="images/slide3.jpg" alt="Our Services" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35);">
         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
             <div class="container mt-4">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-2">
                         <li class="breadcrumb-item"><a href="index.php" class="text-white-50 text-decoration-none">Home</a></li>
-                        <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Workforce Solutions</li>
                     </ol>
                 </nav>
-                <h1 class="display-4 fw-bold text-white mb-3">Our Services</h1>
-                <p class="lead text-white-50" style="max-width: 600px;">Comprehensive solutions to streamline operations, reduce risk, and build a resilient workforce.</p>
+                <h1 class="display-4 fw-bold text-white mb-2">Workforce &amp; Apprenticeship Solutions</h1>
+                <p class="lead text-white-50" style="max-width: 700px;">Integrated human capital services combining talent development, regulatory assurance, and cost efficiency.</p>
             </div>
         </div>
     </section>
@@ -20,51 +20,91 @@
     <!-- Services Hub -->
     <section class="section-padding bg-light-gray">
         <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-accent-gold fw-bold text-uppercase tracking-wide">End-to-End Capabilities</span>
+                <h2 class="text-primary-navy mt-2 mb-3">Comprehensive Workforce Management</h2>
+                <p class="text-muted mx-auto" style="max-width: 650px;">From apprenticeship implementation and contract staffing to precise payroll and advisory, we provide a single accountable partner.</p>
+            </div>
+
             <div class="row g-4 justify-content-center">
-                <!-- Service 1 -->
-                <div class="col-lg-6">
-                    <div class="bg-white rounded shadow-sm overflow-hidden h-100 d-flex flex-column">
-                        <img src="images/service_apprenticeship_1789541853019.jpg" alt="Apprenticeship" class="w-100" style="height: 250px; object-fit: cover;">
+                <!-- Service 1: Apprenticeship Solutions -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                        <img src="images/service_apprenticeship_1789541853019.jpg" alt="Apprenticeship Solutions" class="w-100" style="height: 220px; object-fit: cover;">
                         <div class="p-4 d-flex flex-column flex-grow-1">
-                            <h3 class="text-primary-navy mb-3">Apprenticeship & Skilling</h3>
-                            <p class="text-muted flex-grow-1">End-to-end management of NAPS and NATS programs to build a skilled talent pipeline while leveraging government incentives.</p>
-                            <a href="service-apprenticeship.php" class="btn btn-outline-primary mt-3 align-self-start">Explore Service <i class="fas fa-arrow-right ms-2"></i></a>
+                            <span class="text-accent-gold small fw-bold text-uppercase">NAPS &bull; NATS &bull; State Schemes</span>
+                            <h4 class="text-primary-navy mt-1 mb-3">Apprenticeship Solutions</h4>
+                            <p class="text-muted small flex-grow-1">Lower wage bills by up to 22% with structured government-backed skilling, full portal management, stipend coordination, and DBT reimbursement support.</p>
+                            <a href="service-apprenticeship.php" class="btn btn-outline-primary mt-3 align-self-start">Explore Solutions <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="col-lg-6">
-                    <div class="bg-white rounded shadow-sm overflow-hidden h-100 d-flex flex-column">
-                        <img src="images/service_consulting_1789541867432.jpg" alt="Consulting" class="w-100" style="height: 250px; object-fit: cover;">
+                <!-- Service 2: Contract Staffing -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                        <img src="images/service_staffing_1789541881947.jpg" alt="Contract Staffing" class="w-100" style="height: 220px; object-fit: cover;">
                         <div class="p-4 d-flex flex-column flex-grow-1">
-                            <h3 class="text-primary-navy mb-3">Corporate Consulting</h3>
-                            <p class="text-muted flex-grow-1">Leveraging government programs and strategic workplace solutions for organizational efficiency and structured growth.</p>
-                            <a href="service-consulting.php" class="btn btn-outline-primary mt-3 align-self-start">Explore Service <i class="fas fa-arrow-right ms-2"></i></a>
+                            <span class="text-accent-gold small fw-bold text-uppercase">Flexible Deployment</span>
+                            <h4 class="text-primary-navy mt-1 mb-3">Contract Staffing</h4>
+                            <p class="text-muted small flex-grow-1">Flexible, compliant manpower solutions for project-based, seasonal, and ongoing requirements. Pre-screened talent across pan-India locations.</p>
+                            <a href="service-staffing.php" class="btn btn-outline-primary mt-3 align-self-start">Explore Staffing <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="col-lg-6">
-                    <div class="bg-white rounded shadow-sm overflow-hidden h-100 d-flex flex-column">
-                        <img src="images/service_staffing_1789541881947.jpg" alt="Staffing" class="w-100" style="height: 250px; object-fit: cover;">
+                <!-- Service 3: Payroll Management -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                        <img src="images/slide3.jpg" alt="Payroll Management" class="w-100" style="height: 220px; object-fit: cover;">
                         <div class="p-4 d-flex flex-column flex-grow-1">
-                            <h3 class="text-primary-navy mb-3">Contract Staffing</h3>
-                            <p class="text-muted flex-grow-1">Flexible workforce solutions providing pre-screened, qualified personnel for short-term projects or long-term operational needs.</p>
-                            <a href="service-staffing.php" class="btn btn-outline-primary mt-3 align-self-start">Explore Service <i class="fas fa-arrow-right ms-2"></i></a>
+                            <span class="text-accent-gold small fw-bold text-uppercase">Error-Free Processing</span>
+                            <h4 class="text-primary-navy mt-1 mb-3">Payroll Management</h4>
+                            <p class="text-muted small flex-grow-1">Accurate, timely payroll processing with full statutory deductions (PF, ESI, PT, LWF) and filings, keeping your people paid right and your organization audit-ready.</p>
+                            <a href="service-payroll.php" class="btn btn-outline-primary mt-3 align-self-start">Explore Payroll <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="col-lg-6">
-                    <div class="bg-white rounded shadow-sm overflow-hidden h-100 d-flex flex-column">
-                        <img src="images/slide3.jpg" alt="Payroll" class="w-100" style="height: 250px; object-fit: cover;">
+                <!-- Service 4: Labour Compliance -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                        <img src="images/service_consulting_1789541867432.jpg" alt="Labour Compliance" class="w-100" style="height: 220px; object-fit: cover;">
                         <div class="p-4 d-flex flex-column flex-grow-1">
-                            <h3 class="text-primary-navy mb-3">Payroll & Compliance</h3>
-                            <p class="text-muted flex-grow-1">Accurate, timely payroll processing integrated with rigorous adherence to all labor laws and statutory regulations.</p>
-                            <a href="service-payroll.php" class="btn btn-outline-primary mt-3 align-self-start">Explore Service <i class="fas fa-arrow-right ms-2"></i></a>
+                            <span class="text-accent-gold small fw-bold text-uppercase">Statutory Assurance</span>
+                            <h4 class="text-primary-navy mt-1 mb-3">Labour Compliance</h4>
+                            <p class="text-muted small flex-grow-1">End-to-end management of registrations, returns, and audits under applicable labour laws, keeping you inspection-ready and protected from penalties.</p>
+                            <a href="service-consulting.php#labour-compliance" class="btn btn-outline-primary mt-3 align-self-start">Explore Compliance <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Business License Support -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                        <div class="p-4 bg-primary-navy text-white d-flex align-items-center justify-content-center" style="height: 220px;">
+                            <i class="fas fa-certificate fa-5x text-accent-gold opacity-75"></i>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <span class="text-accent-gold small fw-bold text-uppercase">Permits &amp; Registrations</span>
+                            <h4 class="text-primary-navy mt-1 mb-3">Business License Support</h4>
+                            <p class="text-muted small flex-grow-1">Assistance with obtaining, renewing, and maintaining the licenses and registrations your operations require (Shop Act, Factory, CLRA, Pollution, Municipal).</p>
+                            <a href="service-consulting.php#business-license" class="btn btn-outline-primary mt-3 align-self-start">Explore Licenses <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Workforce Advisory -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
+                        <div class="p-4 bg-light text-dark d-flex align-items-center justify-content-center" style="height: 220px; background: #e9ecef;">
+                            <i class="fas fa-lightbulb fa-5x text-primary-navy opacity-75"></i>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <span class="text-accent-gold small fw-bold text-uppercase">Leadership &amp; Strategy</span>
+                            <h4 class="text-primary-navy mt-1 mb-3">Workforce Advisory</h4>
+                            <p class="text-muted small flex-grow-1">HR Policy Design, Management Development Programs (MDPs), Career Pathing, Performance Management Systems (PMS), and Business Expansion Consulting.</p>
+                            <a href="service-consulting.php#workforce-advisory" class="btn btn-outline-primary mt-3 align-self-start">Explore Advisory <i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -72,5 +112,13 @@
         </div>
     </section>
 
+    <!-- CTA Band -->
+    <section class="cta-band">
+        <div class="container text-center">
+            <h2>Ready to Transform Your <span>Workforce Operations?</span></h2>
+            <p class="lead mb-4 opacity-75">Connect with our IIM alumni leadership team for a customized workforce assessment.</p>
+            <a href="contact.php" class="btn btn-accent btn-lg px-5 py-3 shadow">Connect With a Workforce Expert</a>
+        </div>
+    </section>
 </main>
 <?php include 'footer.php'; ?>
