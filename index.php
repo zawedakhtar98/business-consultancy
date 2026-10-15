@@ -6,6 +6,8 @@
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
             <!-- Slide 1 -->
@@ -61,6 +63,42 @@
                     </div>
                 </div>
             </div>
+            <!-- Slide 4: Industry Sectors -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('images/slide4.jpg'); background-position: center 30%;">
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <h1 class="hero-headline">Specialized Workforce Solutions Across <span>Key Sectors</span></h1>
+                                <p class="hero-subheadline">From Automotive, EV &amp; Electronics to Logistics, Healthcare, Retail &amp; IT/GCCs, we deliver sector-specific talent, rapid deployment, and customized apprenticeships tailored to operational scale.</p>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <a href="sectors.php" class="btn btn-accent btn-lg px-4 py-3">Explore Industry Sectors</a>
+                                    <a href="contact.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Consult Our Specialists</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 5: Contract Staffing & Workforce Solutions -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('images/slide5.jpg'); background-position: center 30%;">
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <h1 class="hero-headline">Flexible Contract Staffing &amp; <span>Payroll Management</span></h1>
+                                <p class="hero-subheadline">Scale your workforce on demand with 100% compliant contract staffing and error-free payroll processing. Rapid pan-India onboarding, rigorous statutory administration, and dedicated HR advisory.</p>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <a href="service-staffing.php" class="btn btn-accent btn-lg px-4 py-3">Explore Contract Staffing</a>
+                                    <a href="service-payroll.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Payroll &amp; Advisory</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -99,8 +137,8 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="bg-white p-4 rounded shadow-sm text-center stat-item">
-                                <h3><span class="stat-number" data-target="22">0</span><span class="stat-suffix">%</span></h3>
-                                <p>Lower Wage Bill Savings</p>
+                                <h3><span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span></h3>
+                                <p>Client Retention Rate</p>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -285,8 +323,8 @@
     <section class="section-padding bg-light-gray" id="why-us">
         <div class="container">
             <div class="text-center mb-5">
-                <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Strategic Human Capital Partner</span>
-                <h2 class="mt-2 mb-3 display-6 fw-bold text-dark">Why <span class="text-primary-navy">WorkForce</span><span class="text-accent-gold">2047</span> <span class="text-primary-navy">Partners?</span></h2>
+                <!-- <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Strategic Human Capital Partner</span> -->
+                <h2 class="mt-2 mb-3 display-6 fw-bold text-dark">Why <span class="text-primary-navy">WorkForce&nbsp; &nbsp;</span><span class="text-accent-gold">2047</span> <span class="text-primary-navy">Partners?</span></h2>
                 <p class="lead text-dark fw-semibold mx-auto" style="max-width: 700px;">Because workforce transformation needs more than manpower.</p>
             </div>
             <div class="row align-items-center mb-5">

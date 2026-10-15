@@ -75,8 +75,8 @@
                     <small class="text-muted">Domain-specific models</small>
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <h2 class="text-accent-gold fw-bold display-4"><span class="stat-number" data-target="22">0</span><span class="stat-suffix">%</span></h2>
-                    <p class="fw-bold text-primary-navy mb-0">Lower Wage Bill Savings</p>
+                    <h2 class="text-accent-gold fw-bold display-4"><span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span></h2>
+                    <p class="fw-bold text-primary-navy mb-0">Client Retention Rate</p>
                     <small class="text-muted">Government stipend &amp; exemptions</small>
                 </div>
                 <div class="col-md-3 col-6 text-center">
@@ -105,8 +105,8 @@
     <section class="section-padding bg-light-gray" id="core-values">
         <div class="container">
             <div class="text-center mb-5">
-                <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Organizational DNA</span>
-                <h2 class="text-primary-navy mt-2 mb-3">Our Core Values — <span class="text-accent-gold">IMPACT</span></h2>
+                <!-- <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Organizational DNA</span> -->
+                <h2 class="text-primary-navy mt-2 mb-3"> Core Values — <span class="text-accent-gold">IMPACT</span></h2>
                 <p class="text-muted mx-auto" style="max-width: 650px;">The principles guiding our relationships, decisions, and commitment to excellence.</p>
             </div>
 
@@ -293,7 +293,8 @@
         </div>
     </section>
 
-    <!-- Transforming Organisational Economics -->
+    <!-- Transforming Organisational Economics (Original Section Commented Out) -->
+    <!--
     <section class="section-padding" style="background-color: #f4f6f8;">
         <div class="container">
             <div class="row align-items-center">
@@ -329,6 +330,55 @@
                                 <p class="text-muted small mb-0">Enhanced net stipend for apprentices through DBT support</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Transforming Organisational Economics (New Section) -->
+    <section class="section-padding" style="background-color: #f4f6f8;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mb-4">
+                        <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Financial Efficiency</span>
+                        <h2 class="text-primary-navy fw-bold display-6 mt-2 mb-3">Transforming Organisational <span class="text-accent-gold">Economics</span></h2>
+                        <p class="lead text-dark mb-4" style="line-height: 1.7;">Most firms optimize one part of workforce cost. We optimize all of it. By integrating apprenticeship, staffing, compliance, HR strategy, and expansion advisory, we create savings that compound across your organization.</p>
+                    </div>
+
+                    <div class="table-responsive bg-white rounded-3 shadow-sm border overflow-hidden">
+                        <table class="table table-hover mb-0 align-middle">
+                            <thead style="background-color: #f1f3f5;">
+                                <tr>
+                                    <th scope="col" class="py-3 px-4 text-dark fw-bold border-bottom" style="width: 32%;">Lever</th>
+                                    <th scope="col" class="py-3 px-4 text-dark fw-bold border-bottom">How it improves your economics</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Apprenticeship</td>
+                                    <td class="py-3 px-4 text-muted">Reduced wage bill, stipend reimbursement</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Staffing</td>
+                                    <td class="py-3 px-4 text-muted">Fixed costs converted to variable costs</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Compliance</td>
+                                    <td class="py-3 px-4 text-muted">Penalties and litigation avoided</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-semibold text-primary-navy">HR Strategy</td>
+                                    <td class="py-3 px-4 text-muted">Lower attrition, higher productivity</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Expansion Advisory</td>
+                                    <td class="py-3 px-4 text-muted">Faster, leaner market entry</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

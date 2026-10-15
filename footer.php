@@ -9,9 +9,9 @@
                     </div>
                     <p class="text-white-50 mb-4">Founded and led by IIM alumni, we are an integrated advisory firm delivering apprenticeship programs, staffing, labour compliance, HR strategy, and business expansion advisory, turning workforce potential into organizational success.</p>
                     <div class="social-icons">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/workforce2047-partners/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a> -->
                     </div>
                 </div>
 

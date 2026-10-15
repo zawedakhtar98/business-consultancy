@@ -121,14 +121,18 @@
                         <h4 class="text-primary-navy fw-bold mb-3">Statutory Scope Managed</h4>
                         <ul class="sector-list mb-0">
                             <li>The Apprentices Act, 1961 (NAPS &amp; NATS Compliance)</li>
-                            <li>The Contract Labour (Regulation and Abolition) Act, 1970</li>
+                            <li>Code on Wages, 2019</li>
+                            <li>Industrial Relations Code, 2020</li>
+                            <li>Code on Social Security, 2020</li>
+                            <li>Occupational Safety, Health and Working Conditions Code, 2020</li>
+                            <!-- <li>The Contract Labour (Regulation and Abolition) Act, 1970</li>
                             <li>Shops and Commercial Establishments Act (All States)</li>
                             <li>The Factories Act, 1948</li>
                             <li>The Employees' Provident Funds &amp; MP Act, 1952</li>
                             <li>The Employees' State Insurance Act, 1948</li>
                             <li>The Payment of Gratuity Act &amp; Payment of Bonus Act</li>
                             <li>Minimum Wages Act &amp; Equal Remuneration Act</li>
-                            <li>Sexual Harassment of Women at Workplace (POSH) Act, 2013</li>
+                            <li>Sexual Harassment of Women at Workplace (POSH) Act, 2013</li> -->
                         </ul>
                     </div>
                 </div>

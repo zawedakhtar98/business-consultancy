@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>How we help:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             NAPS/NATS implementation, trade/job-role mapping, onboarding, contract management, portal administration, stipend coordination, DBT support and ongoing reporting.
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>Our approach:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Build structured apprenticeship pathways that help organizations develop talent for both today's automotive operations and tomorrow's mobility ecosystem.
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>Our role:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Help organizations structure apprenticeship programs, manage documentation and portal activities, and simplify ongoing administration.
                         </div>
                     </div>
@@ -240,7 +240,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>The opportunity:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Use apprenticeship programs to create a structured pipeline of trained operational talent while reducing administrative complexity.
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>Our focus:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Simplify apprenticeship implementation while helping businesses develop talent aligned to their store and operational processes.
                         </div>
                     </div>
@@ -314,7 +314,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>Our approach:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Combine structured workforce planning with apprenticeship administration to help healthcare organizations develop a reliable talent pipeline.
                         </div>
                     </div>
@@ -351,7 +351,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>WorkForce2047 helps with:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Program implementation, onboarding, contracts, portal management, stipend coordination and ongoing administration.
                         </div>
                     </div>
@@ -388,7 +388,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>Our opportunity-led approach:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Help emerging businesses develop structured apprenticeship pathways as new roles and skill requirements evolve.
                         </div>
                     </div>
@@ -425,7 +425,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>Our focus:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Develop structured workforce pathways aligned to the technical requirements of India's rapidly expanding electronics ecosystem.
                         </div>
                     </div>
@@ -462,7 +462,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>WorkForce2047 role:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Support organizations in designing and administering apprenticeship programs aligned with their operational requirements.
                         </div>
                     </div>
@@ -499,7 +499,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>WorkForce2047 role:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             End-to-end program governance, trade mapping, and on-site contractor compliance support across construction sites nationwide.
                         </div>
                     </div>
@@ -544,7 +544,7 @@
                             </div>
                         </div>
                         <div class="sector-highlight-box">
-                            <strong>WorkForce2047 helps:</strong>
+                            <strong>WorkForce2047 Advantage:</strong>
                             Organizations assess suitable apprenticeship opportunities and manage the associated program administration with airtight adherence to data security and regulatory norms.
                         </div>
                     </div>
