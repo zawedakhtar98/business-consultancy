@@ -7,7 +7,7 @@
                         <img src="images/logo/logo.png" alt="WorkForce2047 Logo" onerror="this.style.display='none'">
                         <p class="text-white mb-0 footer-logo">WorkForce <span class="text-accent-gold">2047 Partners</span><span class="text-accent-gold logo-trade">TM</span> LLP</p>
                     </div>
-                    <p class="text-white-50 mb-4">Turning workforce potential into organizational success. Founded and led by IIM alumni, delivering integrated apprenticeship, staffing, and compliance solutions.</p>
+                    <p class="text-white-50 mb-4">Founded and led by IIM alumni, we are an integrated advisory firm delivering apprenticeship programs, staffing, labour compliance, HR strategy, and business expansion advisory, turning workforce potential into organizational success.</p>
                     <div class="social-icons">
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -64,7 +64,7 @@
     </footer>
 
     <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>

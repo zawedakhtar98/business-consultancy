@@ -9,16 +9,14 @@
     <meta property="og:title" content="WorkForce2047 Partners | Professional Workforce Solutions">
     <meta property="og:description" content="Workforce solutions consultancy with deep industry expertise. We deliver practical workforce solutions, contract staffing, and compliance management.">
 
-    <!-- Google Fonts (Fallbacks) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts (Local) -->
+    <link rel="stylesheet" href="vendor/google-fonts/google-fonts.css">
 
     <!-- Bootstrap 5 CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome for Icons (Local) -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -27,7 +25,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.php">
                 <!-- User's provided logo should be placed here -->

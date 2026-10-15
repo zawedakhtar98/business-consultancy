@@ -28,7 +28,7 @@
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background-image: url('images/slide2.jpg'); background-position: center 20%;">
+                <div class="hero-slide" style="background-image: url('images/slide2.jpg'); background-position: center 30%;">
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <div class="row align-items-center">
@@ -125,41 +125,50 @@
             </div>
 
             <div class="row g-4">
-                <!-- Service 1 -->
+                <!-- Service 1: NAPS Implementation -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card" onclick="window.location.href='service-apprenticeship.php'">
+                    <div class="service-card" onclick="window.location.href='service-apprenticeship.php#naps'">
                         <div class="icon-wrapper"><i class="fas fa-arrow-right"></i></div>
-                        <h4>Apprenticeship Solutions</h4>
-                        <p>NAPS, NATS, and State Schemes to build a trained talent pipeline while lowering wage bills up to 22%.</p>
+                        <div class="mb-3 text-accent-gold fs-3"><i class="fas fa-award"></i></div>
+                        <h4>NAPS Implementation</h4>
+                        <p>National Apprenticeship Promotion Scheme with DBT stipend reimbursement up to ₹1,500/month per apprentice and NSQF role mapping.</p>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
+                <!-- Service 2: NATS Implementation -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card" onclick="window.location.href='service-staffing.php'">
+                    <div class="service-card" onclick="window.location.href='service-apprenticeship.php#nats'">
                         <div class="icon-wrapper"><i class="fas fa-arrow-right"></i></div>
-                        <h4>Contract Staffing</h4>
-                        <p>Flexible, compliant manpower solutions for project-based, seasonal, and ongoing business requirements.</p>
+                        <div class="mb-3 text-accent-gold fs-3"><i class="fas fa-graduation-cap"></i></div>
+                        <h4>NATS Implementation</h4>
+                        <p>Structured skilling for fresh graduate engineers and diploma technicians with complete regional BOAT liaison and contract filings.</p>
                     </div>
                 </div>
 
-                <!-- Service 3 -->
+                <!-- Service 3: State Schemes & Subsidies -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card" onclick="window.location.href='service-payroll.php'">
+                    <div class="service-card" onclick="window.location.href='service-apprenticeship.php#state-schemes'">
                         <div class="icon-wrapper"><i class="fas fa-arrow-right"></i></div>
-                        <h4>Payroll Management</h4>
-                        <p>Accurate, timely payroll processing with full statutory deductions, filings, and audit readiness.</p>
+                        <div class="mb-3 text-accent-gold fs-3"><i class="fas fa-landmark"></i></div>
+                        <h4>State Schemes &amp; Subsidies</h4>
+                        <p>Maximize enterprise incentives by combining central schemes with localized state-level apprenticeship promotion frameworks.</p>
                     </div>
                 </div>
 
-                <!-- Service 4 -->
+                <!-- Service 4: Employer Benefits & Cost Advantages -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card" onclick="window.location.href='service-consulting.php'">
+                    <div class="service-card" onclick="window.location.href='service-apprenticeship.php#employer-benefits'">
                         <div class="icon-wrapper"><i class="fas fa-arrow-right"></i></div>
-                        <h4>Labour Compliance &amp; Advisory</h4>
-                        <p>End-to-end statutory registrations, licensing, audits, HR policy design, and Management Development Programs.</p>
+                        <div class="mb-3 text-accent-gold fs-3"><i class="fas fa-chart-line"></i></div>
+                        <h4>Employer Benefits</h4>
+                        <p>Lower wage bills up to 22%, statutory exemptions from PF, ESI, Bonus, and zero permanent absorption liability.</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="service-apprenticeship.php" class="btn btn-primary px-4 py-3 me-sm-3 mb-2 mb-sm-0">Explore Apprenticeship Solutions <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="services.php" class="btn btn-outline-primary px-4 py-3 mb-2 mb-sm-0">View All Workforce Solutions <i class="fas fa-briefcase ms-2"></i></a>
             </div>
         </div>
     </section>
@@ -224,7 +233,7 @@
             </div>
 
             <div class="text-center mt-5">
-                <a href="sectors.php" class="btn btn-primary px-4 py-3">Explore All 13 Industry Sectors <i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="sectors.php" class="btn btn-primary px-4 py-3">Explore All 30+ Industry Sectors <i class="fas fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </section>

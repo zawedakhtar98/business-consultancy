@@ -14,7 +14,7 @@
                     </div>
                     <div class="team-social d-flex justify-content-center gap-4">
                         <a href="#" class="text-teal text-primary-navy"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-teal text-primary-navy"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#" class="text-teal text-primary-navy"><i class="fab fa-twitter"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     </div>
                     <div class="team-social d-flex justify-content-center gap-4">
                         <a href="#" class="text-teal text-primary-navy"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-teal text-primary-navy"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#" class="text-teal text-primary-navy"><i class="fab fa-twitter"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="team-social d-flex justify-content-center gap-4">
                         <a href="#" class="text-teal text-primary-navy"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-teal text-primary-navy"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#" class="text-teal text-primary-navy"><i class="fab fa-twitter"></i></a> -->
                     </div>
                 </div>
             </div>

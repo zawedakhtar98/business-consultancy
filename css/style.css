@@ -3,16 +3,16 @@
    ========================================================================== */
 @font-face {
   font-family: 'AmsiPro';
-  src: url('../fonts/amsipro-r.woff') format('woff');
-  font-weight: 400;
+  src: url('../fonts/amsipro-l.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'AmsiPro';
-  src: url('../fonts/amsipro-l.woff') format('woff');
-  font-weight: 300;
+  src: url('../fonts/amsipro-r.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'AmsiPro';
   src: url('../fonts/amsipro-sb.ttf') format('truetype');
-  font-weight: 600;
+  font-weight: 500 600;
   font-style: normal;
   font-display: swap;
 }
@@ -28,24 +28,24 @@
 @font-face {
   font-family: 'AmsiPro';
   src: url('../fonts/amsipro-b.woff') format('woff');
-  font-weight: 700;
+  font-weight: 700 900;
   font-style: normal;
   font-display: swap;
 }
 
-/* Explicit Weight Aliases */
-@font-face {
-  font-family: 'AmsiPro-Regular';
-  src: url('../fonts/amsipro-r.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
+/* Explicit Weight Aliases (Backward-Compatibility) */
 @font-face {
   font-family: 'AmsiPro-Light';
   src: url('../fonts/amsipro-l.woff') format('woff');
-  font-weight: 300;
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AmsiPro-Regular';
+  src: url('../fonts/amsipro-r.woff') format('woff');
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -53,7 +53,7 @@
 @font-face {
   font-family: 'AmsiPro-SemiBold';
   src: url('../fonts/amsipro-sb.ttf') format('truetype');
-  font-weight: 600;
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -61,7 +61,7 @@
 @font-face {
   font-family: 'AmsiPro-Bold';
   src: url('../fonts/amsipro-b.woff') format('woff');
-  font-weight: 700;
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -78,9 +78,9 @@
   --text-dark: #2c3338;
   --text-light: #555555;
   --white: #FFFFFF;
-  --font-heading: 'AmsiPro-Bold', 'AmsiPro', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-body: 'AmsiPro-Regular', 'AmsiPro', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-semibold: 'AmsiPro-SemiBold', 'AmsiPro', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: 'AmsiPro', 'Poppins', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'AmsiPro', 'Inter', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-semibold: 'AmsiPro', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 html,
@@ -185,6 +185,7 @@ h6,
   line-height: 1.15;
   color: var(--primary-color);
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .logo-trade {
@@ -217,6 +218,60 @@ h6,
 .nav-link:hover,
 .nav-link.active {
   color: var(--accent-color) !important;
+}
+
+/* Desktop Navigation Layout (>= 1200px) */
+@media (min-width: 1200px) {
+  .navbar-brand {
+    flex-shrink: 0;
+    max-width: none;
+    margin-right: 0.75rem;
+  }
+
+  .navbar-collapse {
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  .navbar-nav {
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+  }
+
+  .nav-link {
+    margin-left: 0.25rem;
+    padding: 0.45rem 0.55rem !important;
+    font-size: 0.92rem;
+    white-space: nowrap;
+  }
+
+  .logo-name {
+    font-size: 17.5px;
+  }
+
+  .navbar-brand img {
+    max-height: 44px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar-brand {
+    margin-right: 1.25rem;
+  }
+
+  .nav-link {
+    margin-left: 0.6rem;
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.98rem;
+  }
+
+  .logo-name {
+    font-size: 20px;
+  }
+
+  .navbar-brand img {
+    max-height: 50px;
+  }
 }
 
 /* Buttons */
@@ -272,9 +327,9 @@ h6,
   position: relative;
   background-size: cover;
   background-position: center center;
-  padding: 120px 0;
+  padding: clamp(70px, 10vh, 120px) 0;
   color: var(--white);
-  min-height: 80vh;
+  min-height: max(520px, 75vh);
   display: flex;
   align-items: center;
 }
@@ -285,20 +340,23 @@ h6,
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, rgba(11, 46, 92, 0.78) 0%, rgba(11, 46, 92, 0.55) 50%, rgba(11, 46, 92, 0.2) 100%);
+  background: linear-gradient(90deg, rgba(11, 46, 92, 0.85) 0%, rgba(11, 46, 92, 0.65) 55%, rgba(11, 46, 92, 0.25) 100%);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
+  padding-left: clamp(15px, 4vw, 50px);
+  padding-right: clamp(15px, 4vw, 50px);
 }
 
 .hero-headline {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 3.6vw, 3.35rem);
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   color: var(--white);
+  line-height: 1.2;
 }
 
 .hero-headline span {
@@ -306,20 +364,128 @@ h6,
 }
 
 .hero-subheadline {
-  font-size: 1.25rem;
+  font-size: clamp(0.95rem, 1.25vw, 1.18rem);
   font-weight: 300;
-  margin-bottom: 2.5rem;
-  max-width: 800px;
+  margin-bottom: 2rem;
+  max-width: 760px;
+  line-height: 1.6;
 }
 
-/* Page Header Banners */
-.page-header-banner {
-  position: relative;
-  overflow: hidden;
+/* Hero Carousel Control Arrows (Modern Circular Buttons) */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 46px !important;
+  height: 46px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background-color: rgba(11, 46, 92, 0.7) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 50% !important;
+  opacity: 0.85 !important;
+  transition: all 0.25s ease !important;
+  z-index: 10 !important;
+  bottom: auto !important;
 }
 
-.page-header-img {
-  object-fit: cover;
+.carousel-control-prev {
+  left: 18px !important;
+}
+
+.carousel-control-next {
+  right: 18px !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  opacity: 1 !important;
+  transform: translateY(-50%) scale(1.08) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+@media (max-width: 767.98px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .carousel-control-prev {
+    left: 8px !important;
+  }
+  .carousel-control-next {
+    right: 8px !important;
+  }
+}
+
+/* Universal Page Header Banners across all pages */
+.page-header-banner,
+section.position-relative[style*="height"]:first-of-type,
+div.position-relative[style*="height"]:first-of-type {
+  height: auto !important;
+  min-height: 320px !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: clamp(55px, 8vh, 90px) 0 !important;
+  overflow: hidden !important;
+}
+
+.page-header-banner > img,
+.page-header-banner .page-header-img,
+section.position-relative[style*="height"]:first-of-type > img,
+div.position-relative[style*="height"]:first-of-type > img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+}
+
+.page-header-banner > .position-absolute,
+section.position-relative[style*="height"]:first-of-type > .position-absolute,
+div.position-relative[style*="height"]:first-of-type > .position-absolute {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  height: auto !important;
+  z-index: 2 !important;
+  padding: 0 15px !important;
+}
+
+.page-header-banner h1,
+.page-header-banner .display-4,
+section.position-relative[style*="height"]:first-of-type h1,
+section.position-relative[style*="height"]:first-of-type .display-4,
+div.position-relative[style*="height"]:first-of-type h1,
+div.position-relative[style*="height"]:first-of-type .display-4 {
+  font-size: clamp(1.85rem, 3.2vw, 2.75rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  word-break: break-word;
+}
+
+.page-header-banner .lead,
+section.position-relative[style*="height"]:first-of-type .lead,
+div.position-relative[style*="height"]:first-of-type .lead {
+  font-size: clamp(0.95rem, 1.25vw, 1.15rem) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0 !important;
 }
 
 /* Section Padding */
@@ -702,8 +868,8 @@ h6,
    Comprehensive Tablet & Mobile Responsive Rules
    ========================================================================== */
 
-/* Tablets & Below (max-width: 991.98px) */
-@media (max-width: 991.98px) {
+/* Tablets & Zoomed Viewports (max-width: 1199.98px) */
+@media (max-width: 1199.98px) {
   .hero-headline {
     font-size: 2.3rem;
     line-height: 1.25;
@@ -822,44 +988,12 @@ h6,
     padding: 50px 0;
   }
 
-  /* Responsive Page Header Banners across all pages */
-  section.position-relative[style*="height"],
-  div.position-relative[style*="height"],
-  .page-header-banner {
-    height: auto !important;
-    min-height: 280px !important;
-    display: flex;
-    align-items: center;
-    padding: 60px 0 40px !important;
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-  }
-
-  section.position-relative[style*="height"]>img,
-  div.position-relative[style*="height"]>img,
-  .page-header-banner>img,
-  .page-header-img {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-  section.position-relative[style*="height"]>.position-absolute,
-  div.position-relative[style*="height"]>.position-absolute,
-  .page-header-banner>.position-absolute {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    bottom: auto !important;
-    transform: none !important;
-    width: 100% !important;
-    height: auto !important;
-    z-index: 2 !important;
+  /* Mobile Page Header Banners */
+  .page-header-banner,
+  section.position-relative[style*="height"]:first-of-type,
+  div.position-relative[style*="height"]:first-of-type {
+    min-height: 260px !important;
+    padding: 45px 0 35px !important;
   }
 
   /* Sector Navigation Pills */
@@ -1254,7 +1388,7 @@ h6,
   background-color: var(--white);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar .nav-item.dropdown {
     position: relative;
   }

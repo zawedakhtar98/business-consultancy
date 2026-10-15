@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Hero Section -->
-    <div class="position-relative" style="height: 400px;">
-        <img src="images/service_staffing_1789541881947.jpg" alt="Contract Staffing" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.4);">
+    <div class="position-relative page-header-banner" style="height: 400px;">
+        <img src="images/service_staffing_1789541881947.jpg" alt="Contract Staffing" class="w-100 h-100 object-fit-cover page-header-img" style="filter: brightness(0.4);">
         <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
             <div class="container">
 

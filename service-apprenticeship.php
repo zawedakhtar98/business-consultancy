@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Hero Section -->
-    <div class="position-relative" style="height: 420px;">
-        <img src="images/slide2.jpg" alt="Apprenticeship Solutions" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35); object-position: center 37%;">
+    <div class="position-relative page-header-banner" style="height: 420px;">
+        <img src="images/slide2.jpg" alt="Apprenticeship Solutions" class="w-100 h-100 object-fit-cover page-header-img" style="filter: brightness(0.35); object-position: center 30%;">
         <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
             <div class="container">
                 <nav aria-label="breadcrumb">
@@ -189,7 +189,7 @@
                 <p class="text-muted mx-auto" style="max-width: 650px;">Maximize organizational incentives by combining central NAPS/NATS with state-level apprenticeship promotion schemes.</p>
             </div>
 
-            <div class="row g-4">
+            <!-- <div class="row g-4">
                 <div class="col-md-4">
                     <div class="bg-white p-4 rounded-4 shadow-sm h-100">
                         <div class="text-accent-gold fs-2 mb-3"><i class="fas fa-city"></i></div>
@@ -213,7 +213,7 @@
                         <p class="text-muted small">Targeted schemes for manufacturing, chemicals, automotive components, and solar energy installations with state-backed reimbursement frameworks.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 

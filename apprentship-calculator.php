@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Page Header -->
-    <section class="position-relative" style="height: 360px;">
-        <img src="images/service_apprenticeship_1789541853019.jpg" alt="Apprenticeship Savings Calculator" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35);">
+    <section class="position-relative page-header-banner" style="height: 360px;">
+        <img src="images/service_apprenticeship_1789541853019.jpg" alt="Apprenticeship Savings Calculator" class="w-100 h-100 object-fit-cover page-header-img" style="filter: brightness(0.35);">
         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
             <div class="container mt-4">
                 <nav aria-label="breadcrumb">

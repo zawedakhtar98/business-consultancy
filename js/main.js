@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const toggle = dropdown.querySelector('.dropdown-toggle');
 
         dropdown.addEventListener('mouseenter', function() {
-            if (window.innerWidth >= 992) {
+            if (window.innerWidth >= 1200) {
                 clearTimeout(hoverTimeout);
                 dropdown.classList.add('show');
                 if (menu) menu.classList.add('show');
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         dropdown.addEventListener('mouseleave', function() {
-            if (window.innerWidth >= 992) {
+            if (window.innerWidth >= 1200) {
                 hoverTimeout = setTimeout(() => {
                     dropdown.classList.remove('show');
                     if (menu) menu.classList.remove('show');
