@@ -6,7 +6,7 @@ include 'header.php';
 ?>
 <main>
     <!-- Hero Slider Section -->
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -24,7 +24,7 @@ include 'header.php';
                             <div class="col-lg-8">
                                 <h1 class="hero-headline">Workforce Solutions Designed for <span>Modern Businesses</span></h1>
                                 <p class="hero-subheadline">Organizations today face increasing pressure to attract skilled talent, control workforce costs, and maintain statutory compliance. WorkForce2047 Partners bridges this gap by delivering practical workforce solutions backed by deep industry expertise and IIM alumni leadership.</p>
-                                <div class="d-flex gap-3 flex-wrap">
+                                <div class="d-flex gap-3 flex-wrap hero-btn-group">
                                     <a href="contact.php" class="btn btn-accent btn-lg px-4 py-3">Talk to Our Experts</a>
                                     <a href="services.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Explore Our Services</a>
                                 </div>
@@ -42,7 +42,7 @@ include 'header.php';
                             <div class="col-lg-8">
                                 <h1 class="hero-headline">Build a Smarter Workforce with <span>Apprenticeships</span></h1>
                                 <p class="hero-subheadline">Structured, government-backed programs enable organizations to lower their wage bill by up to 22% while recovering eligible stipend costs through Central/State Government schemes. From registration to reimbursement, we handle every step.</p>
-                                <div class="d-flex gap-3 flex-wrap">
+                                <div class="d-flex gap-3 flex-wrap hero-btn-group">
                                     <a href="service-apprenticeship.php" class="btn btn-accent btn-lg px-4 py-3">Explore Apprenticeship Solutions</a>
                                     <!-- <a href="apprentship-calculator.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Calculate Savings</a> -->
                                 </div>
@@ -60,7 +60,7 @@ include 'header.php';
                             <div class="col-lg-8">
                                 <h1 class="hero-headline">Compliance-Led <span>Workforce Management</span></h1>
                                 <p class="hero-subheadline">Mitigate risk with our rigorous statutory and regulatory management. We navigate India's complex labor laws so you can focus on growth.</p>
-                                <div class="d-flex gap-3 flex-wrap">
+                                <div class="d-flex gap-3 flex-wrap hero-btn-group">
                                     <a href="service-consulting.php#labour-compliance" class="btn btn-accent btn-lg px-4 py-3">Explore Compliance Services</a>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ include 'header.php';
                             <div class="col-lg-8">
                                 <h1 class="hero-headline">Specialized Workforce Solutions Across <span>Key Sectors</span></h1>
                                 <p class="hero-subheadline">From Automotive, EV &amp; Electronics to Logistics, Healthcare, Retail &amp; IT/GCCs, we deliver sector-specific talent, rapid deployment, and customized apprenticeships tailored to operational scale.</p>
-                                <div class="d-flex gap-3 flex-wrap">
+                                <div class="d-flex gap-3 flex-wrap hero-btn-group">
                                     <a href="sectors.php" class="btn btn-accent btn-lg px-4 py-3">Explore Industry Sectors</a>
                                     <a href="contact.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Consult Our Specialists</a>
                                 </div>
@@ -95,7 +95,7 @@ include 'header.php';
                             <div class="col-lg-8">
                                 <h1 class="hero-headline">Flexible Contract Staffing &amp; <span>Payroll Management</span></h1>
                                 <p class="hero-subheadline">Scale your workforce on demand with 100% compliant contract staffing and error-free payroll processing. Rapid pan-India onboarding, rigorous statutory administration, and dedicated HR advisory.</p>
-                                <div class="d-flex gap-3 flex-wrap">
+                                <div class="d-flex gap-3 flex-wrap hero-btn-group">
                                     <a href="service-staffing.php" class="btn btn-accent btn-lg px-4 py-3">Explore Contract Staffing</a>
                                     <a href="service-payroll.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Payroll &amp; Advisory</a>
                                 </div>
@@ -230,7 +230,7 @@ include 'header.php';
                     <div class="sector-card">
                         <div class="sector-badge"><i class="fas fa-industry"></i></div>
                         <h5 class="text-primary-navy mt-2">Manufacturing &amp; Engineering</h5>
-                        <p>Building a skilled shop-floor workforce across production, CNC operations, electrical & mechanical maintenance, and quality control.</p>
+                        <p>Manufacturing businesses need a steady pipeline of technically trained talent across production, quality, maintenance, assembly and machine operations. Our apprenticeship-led workforce solutions help manufacturers develop role-ready talent while managing the administrative requirements associated with apprenticeship programs.</p>
                     </div>
                 </div>
 
@@ -238,7 +238,7 @@ include 'header.php';
                     <div class="sector-card">
                         <div class="sector-badge"><i class="fas fa-car-battery"></i></div>
                         <h5 class="text-primary-navy mt-2">Automotive &amp; EV</h5>
-                        <p>Preparing the workforce for the mobility revolution: EV assembly, battery manufacturing, diagnostics, and component testing.</p>
+                        <p>The transition towards electric mobility is creating demand for new technical capabilities across vehicle manufacturing, battery systems, electronics, service and component manufacturing. WorkForce2047 helps automotive and EV businesses develop apprenticeship programs aligned with emerging workforce requirements.</p>
                     </div>
                 </div>
 
@@ -246,7 +246,7 @@ include 'header.php';
                     <div class="sector-card">
                         <div class="sector-badge"><i class="fas fa-solar-panel"></i></div>
                         <h5 class="text-primary-navy mt-2">Renewable Energy &amp; Solar</h5>
-                        <p>Developing talent for India's clean energy future across solar PV installation, electrical systems, operations & maintenance.</p>
+                        <p>India's renewable energy expansion is creating opportunities across solar manufacturing, installation, electrical systems, operations and maintenance. We help organizations build apprenticeship programs for technical and operational roles across the renewable-energy value chain.</p>
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@ include 'header.php';
                     <div class="sector-card">
                         <div class="sector-badge"><i class="fas fa-laptop-code"></i></div>
                         <h5 class="text-primary-navy mt-2">IT / ITES / BPM</h5>
-                        <p>Building the next generation of digital talent for technical support, customer operations, digital processes, and data ops.</p>
+                        <p>Technology and business-process organizations require scalable talent across customer operations, technical support, data, digital processes and business services. Apprenticeships can provide organizations with a structured pathway to develop entry-level talent around their specific processes.</p>
                     </div>
                 </div>
 
@@ -262,7 +262,7 @@ include 'header.php';
                     <div class="sector-card">
                         <div class="sector-badge"><i class="fas fa-truck-loading"></i></div>
                         <h5 class="text-primary-navy mt-2">E-Commerce &amp; Logistics</h5>
-                        <p>Building the workforce behind India's supply chain: warehouse operations, inventory, picking & packing, and last-mile dispatch.</p>
+                        <p>India's e-commerce and logistics ecosystem requires large and continuously evolving workforce capabilities across warehouses, fulfilment centres, transportation and last-mile operations. WorkForce2047 helps organizations create structured apprenticeship opportunities across operational and support functions.</p>
                     </div>
                 </div>
 
@@ -270,7 +270,7 @@ include 'header.php';
                     <div class="sector-card">
                         <div class="sector-badge"><i class="fas fa-university"></i></div>
                         <h5 class="text-primary-navy mt-2">BFSI &amp; Business Services</h5>
-                        <p>Building talent for India's service economy with customer operations, documentation, digital support, and back-office processing.</p>
+                        <p>Banks, financial institutions, insurance companies and business-service organizations require talent across customer operations, documentation, digital processes and back-office functions. WorkForce2047 helps organizations assess suitable apprenticeship opportunities and manage the associated program administration.</p>
                     </div>
                 </div>
             </div>

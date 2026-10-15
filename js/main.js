@@ -157,4 +157,42 @@ document.addEventListener("DOMContentLoaded", function() {
             statCounters.forEach(counter => animateCounter(counter));
         }
     }
+
+    // Hero Carousel Touch Swipe Gesture Handling (Touch to change slides)
+    const heroCarousel = document.getElementById('heroCarousel');
+    if (heroCarousel) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let touchStartY = 0;
+        let touchEndY = 0;
+        const minSwipeThreshold = 40; // minimum horizontal px distance to count as swipe
+
+        heroCarousel.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].clientX;
+            touchStartY = e.changedTouches[0].clientY;
+        }, { passive: true });
+
+        heroCarousel.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].clientX;
+            touchEndY = e.changedTouches[0].clientY;
+            handleTouchSwipe();
+        }, { passive: true });
+
+        function handleTouchSwipe() {
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
+
+            // Only trigger if horizontal swipe is dominant (prevents interrupting normal page scrolling)
+            if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minSwipeThreshold) {
+                if (typeof bootstrap !== 'undefined' && bootstrap.Carousel) {
+                    const carousel = bootstrap.Carousel.getOrCreateInstance(heroCarousel);
+                    if (deltaX < 0) {
+                        carousel.next(); // Swiped left -> next slide
+                    } else {
+                        carousel.prev(); // Swiped right -> previous slide
+                    }
+                }
+            }
+        }
+    }
 });
