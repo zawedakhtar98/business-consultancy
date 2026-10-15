@@ -1,20 +1,20 @@
 <?php
 // Output Buffer HTML Minifier & Source Obfuscator
 if (!ob_get_level()) {
-    ob_start(function($buffer) {
+    ob_start(function ($buffer) {
         // Strip normal HTML comments (keep conditional comments and structured data)
         $buffer = preg_replace('/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s', '', $buffer);
         // Collapse whitespace and multiple newlines into a single line
         $buffer = preg_replace('/\s+/', ' ', $buffer);
         $buffer = preg_replace('/> </', '><', $buffer);
-        
+
         $notice = "<!--\n" .
-                  "================================================================================\n" .
-                  "  COPYRIGHT & INTELLECTUAL PROPERTY NOTICE - WORKFORCE2047 PARTNERS LLP\n" .
-                  "  All site design, structure, content and assets are protected by copyright law.\n" .
-                  "  Unauthorized scraping, copying, reproduction or redistribution is prohibited.\n" .
-                  "================================================================================\n" .
-                  "-->\n";
+            "================================================================================\n" .
+            "  COPYRIGHT & INTELLECTUAL PROPERTY NOTICE - WORKFORCE2047 PARTNERS LLP\n" .
+            "  All site design, structure, content and assets are protected by copyright law.\n" .
+            "  Unauthorized scraping, copying, reproduction or redistribution is prohibited.\n" .
+            "================================================================================\n" .
+            "-->\n";
         return $notice . trim($buffer);
     });
 }
@@ -50,6 +50,7 @@ $seo_keywords = !empty($page_keywords) ? $page_keywords : $default_keywords;
     <meta name="author" content="WorkForce2047 Partners LLP">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
+    <link rel="icon" type="image/png" href="images/favicon-180.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -67,25 +68,25 @@ $seo_keywords = !empty($page_keywords) ? $page_keywords : $default_keywords;
 
     <!-- Schema.org JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "WorkForce2047 Partners LLP",
-      "alternateName": "WorkForce 2047",
-      "url": "https://workforce2047.com",
-      "logo": "https://workforce2047.com/images/logo/logo.png",
-      "description": "Leading Indian workforce advisory, contract staffing, and government apprenticeship scheme consulting firm offering NAPS, NATS, compliance, and payroll management.",
-      "telephone": "+91-9988220023",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "IN"
-      },
-      "areaServed": "IN",
-      "sameAs": [
-        "https://www.linkedin.com/company/workforce2047-partners-llp"
-      ]
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "WorkForce2047 Partners LLP",
+            "alternateName": "WorkForce 2047",
+            "url": "https://workforce2047.com",
+            "logo": "https://workforce2047.com/images/logo/logo.png",
+            "description": "Leading Indian workforce advisory, contract staffing, and government apprenticeship scheme consulting firm offering NAPS, NATS, compliance, and payroll management.",
+            "telephone": "+91-9988220023",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "IN"
+            },
+            "areaServed": "IN",
+            "sameAs": [
+                "https://www.linkedin.com/company/workforce2047-partners-llp"
+            ]
+        }
     </script>
 
     <!-- Google Fonts (Local) -->
