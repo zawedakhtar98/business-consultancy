@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Page Header -->
-    <section class="position-relative" style="height: 360px;">
-        <img src="images/slide3.jpg" alt="Our Services" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35);">
+    <section class="position-relative page-header-banner" style="height: 380px;">
+        <img src="images/slide3.jpg" alt="Our Services" class="w-100 h-100 object-fit-cover page-header-img" style="filter: brightness(0.35); object-position: center top;">
         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
             <div class="container mt-4">
                 <nav aria-label="breadcrumb">
@@ -30,7 +30,7 @@
                 <!-- Service 1: Apprenticeship Solutions -->
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
-                        <img src="images/service_apprenticeship_1789541853019.jpg" alt="Apprenticeship Solutions" class="w-100" style="height: 220px; object-fit: cover;">
+                        <img src="images/aparentship.png" alt="Apprenticeship Solutions" class="w-100" style="height: 220px; object-fit: cover;">
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <span class="text-accent-gold small fw-bold text-uppercase">NAPS &bull; NATS &bull; State Schemes</span>
                             <h4 class="text-primary-navy mt-1 mb-3">Apprenticeship Solutions</h4>
@@ -82,9 +82,7 @@
                 <!-- Service 5: Business License Support -->
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
-                        <div class="p-4 bg-primary-navy text-white d-flex align-items-center justify-content-center" style="height: 220px;">
-                            <i class="fas fa-certificate fa-5x text-accent-gold opacity-75"></i>
-                        </div>
+                        <img src="images/business-certificate.png" alt="Labour Compliance" class="w-100" style="height: 220px; object-fit: cover;">
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <span class="text-accent-gold small fw-bold text-uppercase">Permits &amp; Registrations</span>
                             <h4 class="text-primary-navy mt-1 mb-3">Business License Support</h4>
@@ -97,9 +95,7 @@
                 <!-- Service 6: Workforce Advisory -->
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-white rounded-4 shadow-sm overflow-hidden h-100 d-flex flex-column">
-                        <div class="p-4 bg-light text-dark d-flex align-items-center justify-content-center" style="height: 220px; background: #e9ecef;">
-                            <i class="fas fa-lightbulb fa-5x text-primary-navy opacity-75"></i>
-                        </div>
+                        <img src="images/advisory.png" alt="Labour Compliance" class="w-100" style="height: 220px; object-fit: cover;">
                         <div class="p-4 d-flex flex-column flex-grow-1">
                             <span class="text-accent-gold small fw-bold text-uppercase">Leadership &amp; Strategy</span>
                             <h4 class="text-primary-navy mt-1 mb-3">Workforce Advisory</h4>

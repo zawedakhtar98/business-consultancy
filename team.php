@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Page Header -->
-    <section class="position-relative" style="height: 350px;">
-        <img src="images/why_us_indian_handshake_1789535515706.jpg" alt="Our Leaders" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35);">
+    <section class="position-relative page-header-banner" style="height: 380px;">
+        <img src="images/team-header.png" alt="Our Leaders" class="w-100 h-100 object-fit-cover page-header-img" style="filter: brightness(0.35); object-position: center 18%;">
         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
             <div class="container mt-4">
                 <nav aria-label="breadcrumb">

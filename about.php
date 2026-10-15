@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Page Header -->
-    <section class="position-relative" style="height: 360px;">
-        <img src="images/slide1.jpg" alt="About Us" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35);">
+    <section class="position-relative page-header-banner">
+        <img src="images/about-header.png" alt="About Us" class="w-100 h-100 object-fit-cover page-header-img about-header">
         <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
             <div class="container mt-4">
                 <nav aria-label="breadcrumb">
@@ -65,22 +65,22 @@
                     <h2 class="text-primary-navy mt-1">Driving Measurable Value</h2>
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <h2 class="text-accent-gold fw-bold display-4">50+</h2>
+                    <h2 class="text-accent-gold fw-bold display-4"><span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span></h2>
                     <p class="fw-bold text-primary-navy mb-0">Combined Years Expertise</p>
                     <small class="text-muted">Led by IIM Alumni</small>
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <h2 class="text-accent-gold fw-bold display-4">13+</h2>
-                    <p class="fw-bold text-primary-navy mb-0">Industry Sectors</p>
+                    <h2 class="text-accent-gold fw-bold display-4"><span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span></h2>
+                    <p class="fw-bold text-primary-navy mb-0">Industry Sectors Covered</p>
                     <small class="text-muted">Domain-specific models</small>
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <h2 class="text-accent-gold fw-bold display-4">22%</h2>
-                    <p class="fw-bold text-primary-navy mb-0">Wage Bill Savings</p>
+                    <h2 class="text-accent-gold fw-bold display-4"><span class="stat-number" data-target="22">0</span><span class="stat-suffix">%</span></h2>
+                    <p class="fw-bold text-primary-navy mb-0">Lower Wage Bill Savings</p>
                     <small class="text-muted">Government stipend &amp; exemptions</small>
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <h2 class="text-accent-gold fw-bold display-4">100%</h2>
+                    <h2 class="text-accent-gold fw-bold display-4"><span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span></h2>
                     <p class="fw-bold text-primary-navy mb-0">Compliance-Led Focus</p>
                     <small class="text-muted">Audit-ready statutory processes</small>
                 </div>

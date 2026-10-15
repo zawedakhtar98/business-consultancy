@@ -5,7 +5,7 @@
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <div class="d-flex align-items-center mb-4">
                         <img src="images/logo/logo.png" alt="WorkForce2047 Logo" onerror="this.style.display='none'">
-                        <p class="text-white mb-0 footer-logo" style="font-family: var(--font-heading);">WorkForce <span class="text-accent-gold">2047 Partners</span><span class="text-accent-gold logo-trade">TM</span> LLP</p>
+                        <p class="text-white mb-0 footer-logo">WorkForce <span class="text-accent-gold">2047 Partners</span><span class="text-accent-gold logo-trade">TM</span> LLP</p>
                     </div>
                     <p class="text-white-50 mb-4">Turning workforce potential into organizational success. Founded and led by IIM alumni, delivering integrated apprenticeship, staffing, and compliance solutions.</p>
                     <div class="social-icons">
@@ -31,7 +31,7 @@
                     <h5>Solutions</h5>
                     <ul>
                         <li><a href="service-apprenticeship.php#naps">NAPS &amp; NATS Implementation</a></li>
-                        <li><a href="apprentship-calculator.php">Apprenticeship Calculator</a></li>
+                        <!-- <li><a href="apprentship-calculator.php">Apprenticeship Calculator</a></li> -->
                         <li><a href="service-staffing.php">Contract Staffing</a></li>
                         <li><a href="service-payroll.php">Payroll Management</a></li>
                         <li><a href="service-consulting.php#labour-compliance">Labour Compliance</a></li>
@@ -43,10 +43,8 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <h5>Contact Us</h5>
                     <ul class="text-white-50">
-                        <li class="mb-2"><i class="fas fa-envelope me-2 text-accent-gold"></i> consult@workforce2047.com</li>
                         <li class="mb-2"><i class="fas fa-envelope me-2 text-accent-gold"></i> info@workforce2047.com</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2 text-accent-gold"></i> +91 99999 90000</li>
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-accent-gold"></i> Mumbai (HO) &bull; Bengaluru &bull; Pune &bull; Goa</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-accent-gold"></i> Bengaluru (HO)</li>
                     </ul>
                 </div>
             </div>

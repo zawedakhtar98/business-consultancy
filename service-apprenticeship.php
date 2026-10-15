@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 <main>
     <!-- Hero Section -->
-    <div class="position-relative" style="height: 400px;">
-        <img src="images/service_apprenticeship_1789541853019.jpg" alt="Apprenticeship Solutions" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35);">
+    <div class="position-relative" style="height: 420px;">
+        <img src="images/slide2.jpg" alt="Apprenticeship Solutions" class="w-100 h-100 object-fit-cover" style="filter: brightness(0.35); object-position: center 37%;">
         <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
             <div class="container">
                 <nav aria-label="breadcrumb">
@@ -13,7 +13,6 @@
                 </nav>
                 <h1 class="display-4 fw-bold text-white mb-2">Apprenticeship Solutions</h1>
                 <p class="lead text-white-50 mx-auto" style="max-width: 800px;">Build a smarter, skilled, and cost-efficient talent pipeline with NAPS, NATS, and State Schemes.</p>
-                <a href="apprentship-calculator.php" class="btn btn-accent btn-lg mt-3"><i class="fas fa-calculator me-2"></i> Try Apprenticeship Calculator</a>
             </div>
         </div>
     </div>

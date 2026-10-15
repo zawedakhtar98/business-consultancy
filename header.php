@@ -9,10 +9,10 @@
     <meta property="og:title" content="WorkForce2047 Partners | Professional Workforce Solutions">
     <meta property="og:description" content="Workforce solutions consultancy with deep industry expertise. We deliver practical workforce solutions, contract staffing, and compliance management.">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts (Fallbacks) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap 5 CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
                 <!-- User's provided logo should be placed here -->
                 <!-- <img src="images/logo/logo.jpeg" class="logo" alt="WorkForce2047 Partners Logo"> -->
                 <img src="images/logo/logo.png" class="logo" alt="WorkForce2047 Partners Logo">
-                <p class="text-primary-navy mb-0 logo-name">WorkForce<span class="text-accent-gold">2047 Partners</span><span class="text-accent-gold logo-trade">TM</span> LLP</p>
+                <p class="text-primary-navy mb-0 logo-name">WorkForce <span class="text-accent-gold"> 2047 Partners</span><span class="text-accent-gold logo-trade">TM</span> LLP</p>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,10 +72,7 @@
                             <li><a class="dropdown-item" href="service-apprenticeship.php#nats"><i class="fas fa-graduation-cap me-2 text-accent-gold"></i> NATS</a></li>
                             <li><a class="dropdown-item" href="service-apprenticeship.php#state-schemes"><i class="fas fa-landmark me-2 text-accent-gold"></i> State Apprenticeship Schemes</a></li>
                             <li><a class="dropdown-item" href="service-apprenticeship.php#employer-benefits"><i class="fas fa-hand-holding-usd me-2 text-accent-gold"></i> Employer Benefits</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item fw-bold text-accent-gold" href="apprentship-calculator.php"><i class="fas fa-calculator me-2"></i> Apprenticeship Calculator</a></li>
+
                         </ul>
                     </li>
 

@@ -28,7 +28,7 @@
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background-image: url('images/slide2.jpg');">
+                <div class="hero-slide" style="background-image: url('images/slide2.jpg'); background-position: center 20%;">
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <div class="row align-items-center">
@@ -37,7 +37,7 @@
                                 <p class="hero-subheadline">Structured, government-backed programs enable organizations to lower their wage bill by up to 22% while recovering eligible stipend costs through Central/State Government schemes. From registration to reimbursement, we handle every step.</p>
                                 <div class="d-flex gap-3 flex-wrap">
                                     <a href="service-apprenticeship.php" class="btn btn-accent btn-lg px-4 py-3">Explore Apprenticeship Solutions</a>
-                                    <a href="apprentship-calculator.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Calculate Savings</a>
+                                    <!-- <a href="apprentship-calculator.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Calculate Savings</a> -->
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
             </div>
             <!-- Slide 3 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background-image: url('images/slide3.jpg');">
+                <div class="hero-slide" style="background-image: url('images/slide3.jpg'); background-position: center top%;">
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <div class="row align-items-center">
@@ -87,25 +87,25 @@
                     <div class="row g-4">
                         <div class="col-sm-6">
                             <div class="bg-white p-4 rounded shadow-sm text-center stat-item">
-                                <h3>50+</h3>
+                                <h3><span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span></h3>
                                 <p>Combined Years Expertise</p>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="bg-white p-4 rounded shadow-sm text-center stat-item">
-                                <h3>30+</h3>
+                                <h3><span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span></h3>
                                 <p>Industry Sectors Covered</p>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="bg-white p-4 rounded shadow-sm text-center stat-item">
-                                <h3>22%</h3>
+                                <h3><span class="stat-number" data-target="22">0</span><span class="stat-suffix">%</span></h3>
                                 <p>Lower Wage Bill Savings</p>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="bg-white p-4 rounded shadow-sm text-center stat-item">
-                                <h3>100%</h3>
+                                <h3><span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span></h3>
                                 <p>Compliance-Led Focus</p>
                             </div>
                         </div>
