@@ -195,4 +195,60 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
+
+    // =========================================================================
+    // Content & Source Code Protection Deterrents
+    // =========================================================================
+
+    // 1. Disable Right-Click Context Menu (except inside form inputs)
+    document.addEventListener('contextmenu', function(e) {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+            return true;
+        }
+        e.preventDefault();
+        return false;
+    });
+
+    // 2. Disable Keyboard Shortcuts (Ctrl+C, Ctrl+U, Ctrl+S, Ctrl+P, F12, DevTools)
+    document.addEventListener('keydown', function(e) {
+        // Allow standard actions inside form inputs
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+            return true;
+        }
+
+        // Block F12 (Inspect Element / DevTools)
+        if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+            return false;
+        }
+
+        // Block Ctrl/Cmd key combinations
+        if (e.ctrlKey || e.metaKey) {
+            const key = e.key.toLowerCase();
+            // Ctrl+U (View Source), Ctrl+S (Save Page), Ctrl+P (Print), Ctrl+C (Copy)
+            if (key === 'u' || key === 's' || key === 'p' || key === 'c') {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+I / J / C (DevTools & Console)
+            if (e.shiftKey && (key === 'i' || key === 'j' || key === 'c')) {
+                e.preventDefault();
+                return false;
+            }
+        }
+    });
+
+    // 3. Disable Dragging of Images
+    document.addEventListener('dragstart', function(e) {
+        if (e.target.nodeName === 'IMG') {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // 4. DevTools Security Warning
+    try {
+        console.log("%cWorkForce2047 Partners LLP", "color: #D4A017; font-size: 24px; font-weight: bold;");
+        console.log("%cProtected Intellectual Property. Unauthorized copying, scraping, or code reproduction is prohibited.", "color: #0B2E5C; font-size: 13px; font-weight: 600;");
+    } catch(err) {}
 });

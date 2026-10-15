@@ -1,4 +1,24 @@
 <?php
+// Output Buffer HTML Minifier & Source Obfuscator
+if (!ob_get_level()) {
+    ob_start(function($buffer) {
+        // Strip normal HTML comments (keep conditional comments and structured data)
+        $buffer = preg_replace('/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s', '', $buffer);
+        // Collapse whitespace and multiple newlines into a single line
+        $buffer = preg_replace('/\s+/', ' ', $buffer);
+        $buffer = preg_replace('/> </', '><', $buffer);
+        
+        $notice = "<!--\n" .
+                  "================================================================================\n" .
+                  "  COPYRIGHT & INTELLECTUAL PROPERTY NOTICE - WORKFORCE2047 PARTNERS LLP\n" .
+                  "  All site design, structure, content and assets are protected by copyright law.\n" .
+                  "  Unauthorized scraping, copying, reproduction or redistribution is prohibited.\n" .
+                  "================================================================================\n" .
+                  "-->\n";
+        return $notice . trim($buffer);
+    });
+}
+
 $current_page_file = basename($_SERVER['PHP_SELF'] ?? '');
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
 $host = $_SERVER['HTTP_HOST'] ?? 'workforce2047.com';
