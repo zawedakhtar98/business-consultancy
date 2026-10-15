@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Apprenticeship Compliance & Labour Law Consulting Services India";
+$page_desc = "Expert labour law advisory and apprenticeship statutory compliance under Apprentices Act 1961. Comprehensive audits, workforce risk mitigation, and advisory.";
+$page_keywords = "Apprenticeship Compliance Services, Apprenticeship statutory compliance, Apprenticeship compliance under Apprentices Act 1961, Workforce Strategy Consulting, Government Apprenticeship Scheme Consultant, labour law compliance audit India, workforce risk mitigation";
+include 'header.php';
+?>
 <main>
     <!-- Hero Section -->
     <div class="position-relative page-header-banner" style="height: 400px;">

@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Our Leadership | WorkForce2047 Partners LLP";
+$page_desc = "Meet the leadership and advisory experts driving workforce excellence, compliance, and skilling innovation at WorkForce2047 Partners LLP.";
+$page_keywords = "WorkForce2047 leadership, workforce leaders India, apprenticeship advisors, workforce consultants India";
+include 'header.php';
+?>
 <main>
     <!-- Page Header -->
     <section class="position-relative page-header-banner" style="height: 380px;">

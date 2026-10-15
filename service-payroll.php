@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Payroll Management Services India | Statutory Payroll & Compliance";
+$page_desc = "Accurate, compliant payroll outsourcing and management services in India. Full PF, ESIC, PT, TDS statutory deductions, filings, and workforce compensation.";
+$page_keywords = "Payroll Management Services India, Statutory payroll compliance, PF ESIC compliance management, payroll outsourcing companies India, workforce compensation management, payroll statutory compliance audit";
+include 'header.php';
+?>
 <main>
     <!-- Hero Section -->
     <div class="position-relative page-header-banner" style="height: 400px;">

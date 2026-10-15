@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Contact WorkForce2047 | Apprenticeship & Workforce Consultants India";
+$page_desc = "Get in touch with WorkForce2047 Partners LLP. Consult our NAPS/NATS implementation and contract staffing experts for customized workforce solutions.";
+$page_keywords = "Contact WorkForce2047, NAPS consultant for companies, NATS implementation partner contact, workforce consulting enquiry, hire apprentices India, apprenticeship consultation India";
+include 'header.php';
+?>
 <main>
     <!-- Page Header -->
     <section class="position-relative page-header-banner" style="height: 380px;">

@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Workforce Solutions & Apprenticeship Services India | WorkForce2047";
+$page_desc = "Comprehensive workforce solutions: NAPS/NATS apprenticeship management, contract staffing, payroll outsourcing, and statutory labour compliance services in India.";
+$page_keywords = "Workforce Management Solutions India, Apprenticeship Management Services, Contract Staffing Services India, Payroll Management Services India, Apprenticeship Compliance Services, End-to-End Apprenticeship Solutions";
+include 'header.php';
+?>
 <main>
     <!-- Page Header -->
     <section class="position-relative page-header-banner" style="height: 380px;">

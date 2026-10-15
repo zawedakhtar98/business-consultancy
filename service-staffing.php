@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Contract Staffing Services India | Flexible Workforce Solutions";
+$page_desc = "Expert contract staffing and workforce solutions across India. On-demand talent acquisition, workforce cost optimization, temporary staffing, and deployment.";
+$page_keywords = "Contract Staffing Services India, Workforce Management Solutions India, Contract staffing and workforce solutions, Contract staffing vs apprenticeship model, flexible staffing solutions India, workforce cost optimization solutions, temporary staffing agency India, industrial staffing India";
+include 'header.php';
+?>
 <main>
     <!-- Hero Section -->
     <div class="position-relative page-header-banner" style="height: 400px;">

@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "About Us | Workforce Advisory & Cost Optimization Solutions";
+$page_desc = "Learn how WorkForce2047 Partners LLP transforms organisational economics, optimizes workforce productivity, and empowers companies with NAPS and compliance.";
+$page_keywords = "Workforce cost optimization solutions, Workforce Strategy Consulting, Benefits of apprenticeship programs for MSMEs, Workforce planning and apprenticeship strategy, Apprenticeship implementation partner, about WorkForce2047, workforce economics";
+include 'header.php';
+?>
 <main>
     <!-- Page Header -->
     <section class="position-relative page-header-banner">

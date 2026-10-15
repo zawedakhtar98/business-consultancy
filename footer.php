@@ -57,10 +57,10 @@
                     <div class="col-md-6 text-md-start mb-3 mb-md-0">
                         <p class="mb-0">&copy; 2026 WorkForce2047 Partners. All Rights Reserved.</p>
                     </div>
-                    <div class="col-md-6 text-md-end">
+                    <!-- <div class="col-md-6 text-md-end">
                         <a href="#" class="text-white-50 me-3 text-decoration-none">Privacy Policy</a>
                         <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

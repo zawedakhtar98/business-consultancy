@@ -1,13 +1,72 @@
+<?php
+$current_page_file = basename($_SERVER['PHP_SELF'] ?? '');
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
+$host = $_SERVER['HTTP_HOST'] ?? 'workforce2047.com';
+$raw_dir = dirname($_SERVER['PHP_SELF'] ?? '');
+$script_dir = trim(str_replace('\\', '/', $raw_dir), '/.');
+$base_path = !empty($script_dir) ? '/' . $script_dir : '';
+$canonical_url = $protocol . $host . $base_path . '/' . ($current_page_file == 'index.php' || empty($current_page_file) ? '' : $current_page_file);
+$og_image_url = $protocol . $host . $base_path . '/images/logo/logo.png';
+
+// Default SEO values
+$site_name = "WorkForce2047 Partners LLP";
+$default_title = "WorkForce2047 Partners | Apprenticeship & Workforce Management Solutions India";
+$default_desc = "WorkForce2047 is India's premier workforce advisory and apprenticeship consulting partner. End-to-end NAPS & NATS implementation, contract staffing, labour compliance, and payroll solutions.";
+$default_keywords = "Apprenticeship Management Services, Apprenticeship Consulting Services India, NAPS Implementation Services, NATS Implementation Services, End-to-End Apprenticeship Solutions, Workforce Management Solutions India, Apprenticeship Compliance Services, Workforce Strategy Consulting, Contract Staffing Services India, Government Apprenticeship Scheme Consultant";
+
+$seo_title = !empty($page_title) ? $page_title : $default_title;
+$seo_desc = !empty($page_desc) ? $page_desc : $default_desc;
+$seo_keywords = !empty($page_keywords) ? $page_keywords : $default_keywords;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorkForce2047 Partners | Professional Workforce Solutions</title>
-    <meta name="description" content="Workforce solutions consultancy with deep industry expertise. We deliver practical workforce solutions, contract staffing, and compliance management.">
-    <meta property="og:title" content="WorkForce2047 Partners | Professional Workforce Solutions">
-    <meta property="og:description" content="Workforce solutions consultancy with deep industry expertise. We deliver practical workforce solutions, contract staffing, and compliance management.">
+    <title><?= htmlspecialchars($seo_title) ?></title>
+    <meta name="description" content="<?= htmlspecialchars($seo_desc) ?>">
+    <meta name="keywords" content="<?= htmlspecialchars($seo_keywords) ?>">
+    <meta name="author" content="WorkForce2047 Partners LLP">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WorkForce2047 Partners LLP">
+    <meta property="og:title" content="<?= htmlspecialchars($seo_title) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($seo_desc) ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($og_image_url) ?>">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= htmlspecialchars($seo_title) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($seo_desc) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($og_image_url) ?>">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "WorkForce2047 Partners LLP",
+      "alternateName": "WorkForce 2047",
+      "url": "https://workforce2047.com",
+      "logo": "https://workforce2047.com/images/logo/logo.png",
+      "description": "Leading Indian workforce advisory, contract staffing, and government apprenticeship scheme consulting firm offering NAPS, NATS, compliance, and payroll management.",
+      "telephone": "+91-9988220023",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "areaServed": "IN",
+      "sameAs": [
+        "https://www.linkedin.com/company/workforce2047-partners-llp"
+      ]
+    }
+    </script>
 
     <!-- Google Fonts (Local) -->
     <link rel="stylesheet" href="vendor/google-fonts/google-fonts.css">

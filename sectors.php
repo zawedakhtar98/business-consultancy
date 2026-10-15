@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Industry Workforce & Apprenticeship Solutions | WorkForce2047";
+$page_desc = "Customized workforce and apprenticeship solutions for Manufacturing, GCCs, BFSI, Retail, Logistics, Healthcare, Aerospace, Drones, and Semiconductor industries.";
+$page_keywords = "Apprenticeship solutions for manufacturing companies, Hiring apprentices for IT and service sector, GCC workforce solutions India, BFSI apprenticeship staffing, logistics workforce management, retail staffing solutions India, semiconductor talent solutions, drone industry workforce, sector specific staffing India";
+include 'header.php';
+?>
 <main>
     <!-- Page Header -->
     <section class="position-relative page-header-banner" style="height: 380px;">

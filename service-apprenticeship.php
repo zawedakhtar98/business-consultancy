@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Apprenticeship Management Services | NAPS & NATS Implementation India";
+$page_desc = "End-to-end apprenticeship management services in India. NAPS & NATS implementation, portal management, stipend reimbursement support, and statutory compliance.";
+$page_keywords = "Apprenticeship Management Services, Apprenticeship Consulting Services India, NAPS Implementation Services, NATS Implementation Services, End-to-End Apprenticeship Solutions, Apprenticeship program management company, NAPS consultant for companies, NATS apprenticeship management services, Apprenticeship outsourcing services, Apprenticeship portal management services, Apprenticeship stipend reimbursement support, Apprenticeship statutory compliance, How to implement NAPS for companies, NAPS vs NATS difference for employers, Apprenticeship compliance under Apprentices Act 1961, Apprenticeship stipend reimbursement process India";
+include 'header.php';
+?>
 <main>
     <!-- Hero Section -->
     <div class="position-relative page-header-banner" style="height: 420px;">

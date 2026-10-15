@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow internal resource directories
+Disallow: /vendor/
+Disallow: /scratch/
+
+# Sitemap location
+Sitemap: https://workforce2047.com/sitemap.xml

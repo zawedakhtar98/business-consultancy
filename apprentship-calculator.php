@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "Apprenticeship Savings Calculator | NAPS Cost Optimization India";
+$page_desc = "Calculate your corporate cost savings with our Apprenticeship Cost Calculator. Compare regular employee wages with NAPS stipends and government reimbursements.";
+$page_keywords = "Apprenticeship cost calculator, NAPS stipend calculator, apprenticeship stipend reimbursement support, workforce cost optimization calculator, NAPS savings calculator India, benefits of apprenticeship programs for MSMEs";
+include 'header.php';
+?>
 <main>
     <!-- Page Header -->
     <section class="position-relative page-header-banner" style="height: 360px;">

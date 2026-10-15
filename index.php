@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php
+$page_title = "WorkForce2047 Partners | Apprenticeship & Workforce Management Solutions India";
+$page_desc = "WorkForce2047 is India's leading workforce management and apprenticeship consulting partner. End-to-end NAPS & NATS implementation, contract staffing, and compliance.";
+$page_keywords = "Apprenticeship Management Services, Apprenticeship Consulting Services India, NAPS Implementation Services, NATS Implementation Services, End-to-End Apprenticeship Solutions, Workforce Management Solutions India, Apprenticeship Compliance Services, Workforce Strategy Consulting, Contract Staffing Services India, Government Apprenticeship Scheme Consultant, Apprenticeship implementation partner";
+include 'header.php';
+?>
 <main>
     <!-- Hero Slider Section -->
     <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
