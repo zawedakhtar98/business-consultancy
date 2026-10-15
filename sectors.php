@@ -21,9 +21,9 @@
     <section class="section-padding bg-white pb-0">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-10 text-center mb-5">
-                    <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Multi-Sector Expertise</span>
-                    <h2 class="text-primary-navy mt-2 mb-4 fw-bold">Disciplined Workforce Planning &amp; Execution</h2>
+                <div class="col-lg-12 text-justify mb-5">
+                    <p class="text-accent-gold fw-bold text-uppercase tracking-wide text-center">Multi-Sector Expertise</p>
+                    <h2 class="text-primary-navy mt-2 mb-4 fw-bold text-center">Disciplined Workforce Planning &amp; Execution</h2>
                     <p class="lead text-dark mb-4" style="line-height: 1.8;">
                         Each industry faces its own workforce demands, skill gaps, operating models, and regulatory requirements. <strong>WorkForce2047 Partners</strong>, founded and led by <strong>IIM alumni</strong>, brings a disciplined, data-informed approach to workforce planning and execution. We work with organizations to design and manage apprenticeship-led workforce programs, backed by end-to-end labour compliance, payroll and flexible staffing support, all aligned to your business objectives.
                     </p>
@@ -361,7 +361,9 @@
                 <div id="drone" class="col-lg-6">
                     <div class="sector-detail-card">
                         <div class="d-flex align-items-center mb-3">
-                            <span class="sector-icon-badge me-3">🚁</span>
+                            <span class="sector-icon-badge me-3 d-inline-flex align-items-center justify-content-center">
+                                <img src="images/icons/drone.png" alt="Drone &amp; UAV" style="width: 44px; height: 44px; object-fit: contain;">
+                            </span>
                             <div>
                                 <h4 class="text-primary-navy mb-1 fw-bold">Drone &amp; UAV</h4>
                                 <div class="sector-subheading">Preparing Talent for India's Emerging Drone Economy</div>
@@ -398,7 +400,9 @@
                 <div id="semiconductor" class="col-lg-6">
                     <div class="sector-detail-card">
                         <div class="d-flex align-items-center mb-3">
-                            <span class="sector-icon-badge me-3">💾</span>
+                            <span class="sector-icon-badge me-3 d-inline-flex align-items-center justify-content-center">
+                                <img src="images/icons/semiconductor.png" alt="Semiconductor &amp; Electronics" style="width: 44px; height: 44px; object-fit: contain;">
+                            </span>
                             <div>
                                 <h4 class="text-primary-navy mb-1 fw-bold">Semiconductor &amp; Electronics</h4>
                                 <div class="sector-subheading">Building India's Semiconductor Workforce</div>

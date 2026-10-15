@@ -13,7 +13,7 @@
                         <img src="images/leader/leader3.jpg" alt="Team Member 4" class="img-fluid rounded-circle">
                     </div>
                     <div class="team-social d-flex justify-content-center gap-4">
-                        <a href="https://www.linkedin.com/in/praveen-k-71916720/" class="text-teal text-primary-navy"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/praveen-k-71916720/" target="_blank" class="text-teal text-primary-navy"><i class="fab fa-linkedin-in"></i></a>
                         <!-- <a href="#" class="text-teal text-primary-navy"><i class="fab fa-twitter"></i></a> -->
                     </div>
                 </div>

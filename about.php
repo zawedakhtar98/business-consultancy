@@ -25,7 +25,7 @@
                     <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Our Story</span>
                     <h2 class="text-primary-navy mt-2 mb-4 fw-bold">Built for India's MSMEs &amp; Growing Enterprises</h2>
                     <p class="lead text-dark mb-4" style="line-height: 1.8;">
-                        With half a century of combined experience, our firm is a trusted advisor on labour compliance, HR strategy, and government-supported apprenticeship and skilling programs.
+                        With half a century of combined experience, our firm is a trusted advisor on labour compliance, HR strategy, business development advisory, and government-supported apprenticeship and skilling programs.
                     </p>
                     <p class="text-muted mb-4" style="line-height: 1.8;">
                         Micro, Small and Medium Enterprises are the backbone of India's economy, driving GDP, employment, and exports. We are committed to supporting them. Our advisory helps MSMEs meet their statutory obligations with confidence, build structured and future-ready HR practices, and reduce regulatory risk, so that owners can focus on growth.
@@ -95,7 +95,7 @@
             <h2 class="text-white mt-2 mb-4 display-6 fw-bold">Turning Workforce Potential into Organizational Success</h2>
             <div class="mx-auto" style="max-width: 900px;">
                 <p class="lead text-white-50 mb-0" style="line-height: 1.9;">
-                    Our commitment extends well beyond apprentice engagement. We help organizations design and execute an integrated, forward-looking workforce strategy, combining apprenticeship programs, flexible contract staffing, robust labour compliance, and precise payroll management, to build capability, drive efficiency, and secure sustainable growth.
+                    Our commitment extends well beyond apprentice engagement. We help organizations design and execute an integrated, forward-looking workforce strategy, combining apprenticeship programs, business development advisory, flexible contract staffing, robust labour compliance, and precise payroll management, to build capability, drive efficiency, and secure sustainable growth.
                 </p>
             </div>
         </div>

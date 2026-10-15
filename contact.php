@@ -53,7 +53,7 @@
                                 <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your industry, locations, and workforce objectives..."></textarea>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold fs-5">Submit Request to Expert Team</button>
+                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold fs-5">Submit Request</button>
                             </div>
                         </div>
                     </form>
@@ -71,15 +71,6 @@
                                 <p class="mb-0"><a href="mailto:info@workforce2047.com" class="text-decoration-none text-dark fw-semibold">info@workforce2047.com</a></p>
                             </div>
                         </div>
-                        <!-- 
-                        <div class="d-flex mb-4">
-                            <div class="text-accent-gold me-3 fs-3"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <h6 class="mb-1 text-primary-navy fw-bold">Phone Support</h6>
-                                <p class="text-dark fw-semibold mb-0">+91 99999 90000</p>
-                                <small class="text-muted">Mon - Sat, 9:00 AM - 6:00 PM IST</small>
-                            </div>
-                        </div> -->
 
                         <div class="d-flex mb-4">
                             <div class="text-accent-gold me-3 fs-3"><i class="fas fa-map-marker-alt"></i></div>
@@ -87,6 +78,17 @@
                                 <h6 class="mb-1 text-primary-navy fw-bold">Corporate Offices</h6>
                                 <p class="text-muted mb-0">Bengaluru (HO)</p>
                             </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="social-icons d-flex gap-3 justify-content-center">
+                            <!-- <a href="#" class="text-primary-navy fs-4"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary-navy fs-4"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/company/workforce2047-partners/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin rounded-pill d-inline-flex align-items-center shadow-sm text-decoration-none">
+                                <i class="fab fa-linkedin fs-5 me-2"></i> Follow us on LinkedIn
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <img src="images/workforcelinkedin-scanner.jpeg" alt="MSME" class="rounded-3 bg-white p-1 shadow-sm border img-fluid flex-shrink-0" style="max-height: 170px;">
                         </div>
                     </div>
                 </div>

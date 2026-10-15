@@ -8,10 +8,13 @@
                         <p class="text-white mb-0 footer-logo">WorkForce <span class="text-accent-gold">2047 Partners</span><span class="text-accent-gold logo-trade">TM</span> LLP</p>
                     </div>
                     <p class="text-white-50 mb-4">Founded and led by IIM alumni, we are an integrated advisory firm delivering apprenticeship programs, staffing, labour compliance, HR strategy, and business expansion advisory, turning workforce potential into organizational success.</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/company/workforce2047-partners/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <!-- <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a> -->
+                    <div class="d-flex align-items-center flex-wrap gap-3">
+                        <a href="https://www.linkedin.com/company/workforce2047-partners/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin rounded-pill d-inline-flex align-items-center shadow-sm text-decoration-none">
+                            <i class="fab fa-linkedin fs-5 me-2"></i> Follow us on LinkedIn
+                        </a>
+                        <div>
+                            <img src="images/msme.jpeg" alt="MSME" class="rounded-3 bg-white p-1 shadow-sm border flex-shrink-0" style="height: 38px; object-fit: contain;">
+                        </div>
                     </div>
                 </div>
 

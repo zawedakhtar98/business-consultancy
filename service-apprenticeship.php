@@ -76,7 +76,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 pe-lg-5 mb-4 mb-lg-0">
-                    <span class="text-accent-gold fw-bold text-uppercase tracking-wide">National Apprenticeship Promotion Scheme</span>
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <img src="images/logo/naps-logo.jpg" alt="National Apprenticeship Promotion Scheme" class="rounded-3 bg-white p-1 shadow-sm border flex-shrink-0 naps-logo">
+                    </div>
+                    <!-- <span class="text-accent-gold fw-bold text-uppercase tracking-wide">National Apprenticeship Promotion Scheme</span> -->
                     <h2 class="text-primary-navy mt-2 mb-3">NAPS Implementation &amp; DBT Coordination</h2>
                     <p class="lead text-dark mb-4">
                         National Apprenticeship Promotion Scheme (NAPS) was launched on 19th August 2016 by the Government of India to provide financial incentives and institutional support to establishments undertaking apprenticeship training.
@@ -141,7 +144,10 @@
         <div class="container">
             <div class="row align-items-center flex-lg-row-reverse">
                 <div class="col-lg-7 ps-lg-5 mb-4 mb-lg-0">
-                    <span class="text-accent-gold fw-bold text-uppercase tracking-wide">National Apprenticeship Training Scheme</span>
+                    <div class="d-flex align-items-center gap-3 mb-2">
+                        <img src="images/nats.jpeg" alt="National Apprenticeship Training Scheme" class="rounded-3 bg-white p-1 shadow-sm border flex-shrink-0 nats-logo">
+                    </div>
+                    <!-- <span class="text-accent-gold fw-bold text-uppercase tracking-wide">National Apprenticeship Training Scheme</span> -->
                     <h2 class="text-primary-navy mt-2 mb-3">NATS for Graduate &amp; Diploma Technical Talent</h2>
                     <p class="lead text-dark mb-4">
                         NATS is administered through the Ministry of Education and Boards of Apprenticeship Training (BOAT/BOPT), providing specialized 1-year practical training for fresh graduates and diploma holders.
@@ -221,7 +227,7 @@
     <section id="employer-benefits" class="section-padding bg-white">
         <div class="container">
             <div class="text-center mb-5">
-                <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Compelling Value Proposition</span>
+                <!-- <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Compelling Value Proposition</span> -->
                 <h2 class="text-primary-navy fw-bold display-6">Employer Benefits &amp; Cost Advantages</h2>
                 <p class="text-muted mx-auto mt-2" style="max-width: 650px;">How apprenticeship programs transform your talent supply while generating direct balance sheet savings.</p>
             </div>
