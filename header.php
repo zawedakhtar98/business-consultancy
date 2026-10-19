@@ -50,7 +50,7 @@ $seo_keywords = !empty($page_keywords) ? $page_keywords : $default_keywords;
     <meta name="author" content="WorkForce2047 Partners LLP">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
-    <link rel="icon" type="image/png" href="images/favicon-180.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">

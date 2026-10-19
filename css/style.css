@@ -97,10 +97,16 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none; */
+}
+
+.lead {
+  font-size: 1.10rem;
+  font-weight: 400;
+
 }
 
 /* Ensure form controls (inputs, textareas, selects) remain fully selectable & editable */
@@ -636,7 +642,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
 }
 
 .service-card h4 {
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   margin-bottom: 1rem;
   padding-right: 2rem;
 }
@@ -677,7 +683,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
   justify-content: center;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   border: 4px solid var(--white);
 }
 
@@ -688,7 +694,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
 
 .sector-card p {
   color: var(--text-light);
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-bottom: 0;
   text-align: justify;
   text-justify: inter-word;
@@ -1780,7 +1786,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
 }
 
 .value-card h4 {
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   color: var(--primary-color);
   margin-bottom: 0.75rem;
 }
@@ -1817,7 +1823,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
 }
 
 .diff-card p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 0;
   line-height: 1.5;

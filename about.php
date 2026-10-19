@@ -187,7 +187,7 @@ include 'header.php';
                     <p class="lead text-dark mb-4" style="line-height: 1.8;">
                         Led by IIM alumni, WorkForce2047 Partners brings together <strong>over 50+ years of combined workforce and business operations experience</strong>, along with deep expertise in apprenticeship and workforce management. We help organizations build a workforce that is more efficient, compliant, and future-ready.
                     </p>
-                    <p class="text-muted mb-0" style="line-height: 1.8; font-size: 1.05rem;">
+                    <p class="text-muted mb-0" style="line-height: 1.8; font-size: 1.10rem;">
                         Our approach goes beyond filling positions. We work as a strategic partner, aligning talent, compliance, and operations to your business goals, so you can focus on growth while we manage the complexity.
                     </p>
                 </div>
@@ -352,38 +352,42 @@ include 'header.php';
                         <h2 class="text-primary-navy fw-bold display-6 mt-2 mb-3">Transforming Organisational <span class="text-accent-gold">Economics</span></h2>
                         <p class="lead text-dark mb-4" style="line-height: 1.7;">Most firms optimize one part of workforce cost. We optimize all of it. By integrating apprenticeship, staffing, compliance, HR strategy, and expansion advisory, we create savings that compound across your organization.</p>
                     </div>
-
-                    <div class="table-responsive bg-white rounded-3 shadow-sm border overflow-hidden">
-                        <table class="table table-hover mb-0 align-middle">
-                            <thead style="background-color: #f1f3f5;">
-                                <tr>
-                                    <th scope="col" class="py-3 px-4 text-dark fw-bold border-bottom" style="width: 32%;">Lever</th>
-                                    <th scope="col" class="py-3 px-4 text-dark fw-bold border-bottom">How it improves your economics</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Apprenticeship</td>
-                                    <td class="py-3 px-4 text-muted">Reduced wage bill, stipend reimbursement</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Staffing</td>
-                                    <td class="py-3 px-4 text-muted">Fixed costs converted to variable costs</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Compliance</td>
-                                    <td class="py-3 px-4 text-muted">Penalties and litigation avoided</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 px-4 fw-semibold text-primary-navy">HR Strategy</td>
-                                    <td class="py-3 px-4 text-muted">Lower attrition, higher productivity</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 px-4 fw-semibold text-primary-navy">Expansion Advisory</td>
-                                    <td class="py-3 px-4 text-muted">Faster, leaner market entry</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="d-flex gap-4">
+                        <div class="col-5 mb-4 mb-lg-0">
+                            <img src="images/slide2.png" alt="Economic Growth" class="img-fluid rounded-4 shadow-lg" style="height: 480px; object-fit: cover; width: 100%;">
+                        </div>
+                        <div class="table-responsive col-7 bg-white rounded-3 shadow-sm border overflow-hidden">
+                            <table class="table table-hover mb-0 align-middle">
+                                <thead style="background-color: #f1f3f5;">
+                                    <tr>
+                                        <th scope="col" class="py-3 px-4 text-dark fw-bold border-bottom" style="width: 32%;">Lever</th>
+                                        <th scope="col" class="py-3 px-4 text-dark fw-bold border-bottom">How it improves your economics</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold text-primary-navy">Apprenticeship</td>
+                                        <td class="py-3 px-4 text-muted">Reduced wage bill, stipend reimbursement</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold text-primary-navy">Staffing</td>
+                                        <td class="py-3 px-4 text-muted">Fixed costs converted to variable costs</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold text-primary-navy">Compliance</td>
+                                        <td class="py-3 px-4 text-muted">Penalties and litigation avoided</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold text-primary-navy">HR Strategy</td>
+                                        <td class="py-3 px-4 text-muted">Lower attrition, higher productivity</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 fw-semibold text-primary-navy">Expansion Advisory</td>
+                                        <td class="py-3 px-4 text-muted">Faster, leaner market entry</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

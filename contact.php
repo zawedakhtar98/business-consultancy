@@ -29,7 +29,7 @@ include 'header.php';
                 <div class="col-lg-7">
                     <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Direct Consultation</span>
                     <h2 class="text-primary-navy mt-1 mb-4">Connect to a Workforce Expert</h2>
-                    <p class="text-muted mb-4">Fill out the form below and one of our IIM alumni workforce consultants will reach out to you within 24 hours to conduct an initial needs assessment.</p>
+                    <p class="text-muted mb-4"> A member of our workforce consulting team will contact you within 24 hours to commence your initial needs assessment.</p>
 
                     <form id="contactForm" class="needs-validation" novalidate>
                         <div class="row g-3">

@@ -27,11 +27,11 @@
                             <!-- Q1 -->
                             <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
                                 <h3 class="accordion-header" id="headingQ1">
-                                    <button class="accordion-button fw-bold text-primary-navy" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ1" aria-expanded="true" aria-controls="collapseQ1">
+                                    <button class="accordion-button fw-bold text-primary-navy collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ1" aria-expanded="true" aria-controls="collapseQ1">
                                         <i class="fas fa-question-circle text-accent-gold me-2"></i> Is Apprenticeship Training mandated under the Act?
                                     </button>
                                 </h3>
-                                <div id="collapseQ1" class="accordion-collapse collapse show" aria-labelledby="headingQ1" data-bs-parent="#accordionQuestionsApprenticeship">
+                                <div id="collapseQ1" class="accordion-collapse collapse" aria-labelledby="headingQ1" data-bs-parent="#accordionQuestionsApprenticeship">
                                     <div class="accordion-body bg-light">
                                         <p class="mb-2"><strong>Yes.</strong> Under the Apprentices Act, 1961 and subsequent amendments:</p>
                                         <ul class="mb-2 ps-3">

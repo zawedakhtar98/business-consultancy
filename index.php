@@ -35,7 +35,7 @@ include 'header.php';
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background-image: url('images/slide2.jpg'); background-position: center 30%;">
+                <div class="hero-slide" style="background-image: url('images/slide2.png'); background-position: center 30%;">
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <div class="row align-items-center">
@@ -75,8 +75,8 @@ include 'header.php';
                     <div class="container hero-content">
                         <div class="row align-items-center">
                             <div class="col-lg-8">
-                                <h1 class="hero-headline">Specialized Workforce Solutions Across <span>Key Sectors</span></h1>
-                                <p class="hero-subheadline">From Automotive, EV &amp; Electronics to Logistics, Healthcare, Retail &amp; IT/GCCs, we deliver sector-specific talent, rapid deployment, and customized apprenticeships tailored to operational scale.</p>
+                                <h1 class="hero-headline">Strategic Workforce Advisory for Sustainable <span>Growth</span></h1>
+                                <p class="hero-subheadline">From HR policy design and management development to performance systems, business expansion, and growth strategy, we guide organizations at every stage of scale.</p>
                                 <div class="d-flex gap-3 flex-wrap hero-btn-group">
                                     <a href="sectors.php" class="btn btn-accent btn-lg px-4 py-3">Explore Industry Sectors</a>
                                     <a href="contact.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Consult Our Specialists</a>
@@ -88,7 +88,7 @@ include 'header.php';
             </div>
             <!-- Slide 5: Contract Staffing & Workforce Solutions -->
             <div class="carousel-item">
-                <div class="hero-slide" style="background-image: url('images/slide5.jpg'); background-position: center 30%;">
+                <div class="hero-slide" style="background-image: url('images/slide5.png'); background-position: center 30%;">
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <div class="row align-items-center">

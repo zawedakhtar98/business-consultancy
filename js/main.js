@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Sticky Navigation
     const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.classList.add('shadow-sm');
             navbar.style.background = 'rgba(255, 255, 255, 0.95)';
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const menu = dropdown.querySelector('.dropdown-menu');
         const toggle = dropdown.querySelector('.dropdown-toggle');
 
-        dropdown.addEventListener('mouseenter', function() {
+        dropdown.addEventListener('mouseenter', function () {
             if (window.innerWidth >= 1200) {
                 clearTimeout(hoverTimeout);
                 dropdown.classList.add('show');
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        dropdown.addEventListener('mouseleave', function() {
+        dropdown.addEventListener('mouseleave', function () {
             if (window.innerWidth >= 1200) {
                 hoverTimeout = setTimeout(() => {
                     dropdown.classList.remove('show');
@@ -45,12 +45,12 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 const navHeight = document.querySelector('.navbar').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -62,12 +62,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Form Validation (if contact form exists)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
             // Basic validation
             let isValid = true;
             const requiredFields = contactForm.querySelectorAll('[required]');
-            
+
             requiredFields.forEach(field => {
                 if (!field.value.trim()) {
                     isValid = false;
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
             threshold: 0.5,
             rootMargin: "0px 0px -100px 0px"
         };
-        
+
         const timelineObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -167,12 +167,12 @@ document.addEventListener("DOMContentLoaded", function() {
         let touchEndY = 0;
         const minSwipeThreshold = 40; // minimum horizontal px distance to count as swipe
 
-        heroCarousel.addEventListener('touchstart', function(e) {
+        heroCarousel.addEventListener('touchstart', function (e) {
             touchStartX = e.changedTouches[0].clientX;
             touchStartY = e.changedTouches[0].clientY;
         }, { passive: true });
 
-        heroCarousel.addEventListener('touchend', function(e) {
+        heroCarousel.addEventListener('touchend', function (e) {
             touchEndX = e.changedTouches[0].clientX;
             touchEndY = e.changedTouches[0].clientY;
             handleTouchSwipe();
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // =========================================================================
 
     // 1. Disable Right-Click Context Menu (except inside form inputs)
-    document.addEventListener('contextmenu', function(e) {
+    document.addEventListener('contextmenu', function (e) {
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
             return true;
         }
@@ -210,36 +210,36 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // 2. Disable Keyboard Shortcuts (Ctrl+C, Ctrl+U, Ctrl+S, Ctrl+P, F12, DevTools)
-    document.addEventListener('keydown', function(e) {
-        // Allow standard actions inside form inputs
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-            return true;
-        }
-
-        // Block F12 (Inspect Element / DevTools)
-        if (e.key === 'F12' || e.keyCode === 123) {
-            e.preventDefault();
-            return false;
-        }
-
-        // Block Ctrl/Cmd key combinations
-        if (e.ctrlKey || e.metaKey) {
-            const key = e.key.toLowerCase();
-            // Ctrl+U (View Source), Ctrl+S (Save Page), Ctrl+P (Print), Ctrl+C (Copy)
-            if (key === 'u' || key === 's' || key === 'p' || key === 'c') {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+Shift+I / J / C (DevTools & Console)
-            if (e.shiftKey && (key === 'i' || key === 'j' || key === 'c')) {
-                e.preventDefault();
-                return false;
-            }
-        }
-    });
+    /* document.addEventListener('keydown', function(e) {
+         // Allow standard actions inside form inputs
+         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+             return true;
+         }
+ 
+         // Block F12 (Inspect Element / DevTools)
+         if (e.key === 'F12' || e.keyCode === 123) {
+             e.preventDefault();
+             return false;
+         }
+ 
+         // Block Ctrl/Cmd key combinations
+         if (e.ctrlKey || e.metaKey) {
+             const key = e.key.toLowerCase();
+             // Ctrl+U (View Source), Ctrl+S (Save Page), Ctrl+P (Print), Ctrl+C (Copy)
+             if (key === 'u' || key === 's' || key === 'p' || key === 'c') {
+                 e.preventDefault();
+                 return false;
+             }
+             // Ctrl+Shift+I / J / C (DevTools & Console)
+             if (e.shiftKey && (key === 'i' || key === 'j' || key === 'c')) {
+                 e.preventDefault();
+                 return false;
+             }
+         }
+     });*/
 
     // 3. Disable Dragging of Images
-    document.addEventListener('dragstart', function(e) {
+    document.addEventListener('dragstart', function (e) {
         if (e.target.nodeName === 'IMG') {
             e.preventDefault();
             return false;
@@ -250,5 +250,5 @@ document.addEventListener("DOMContentLoaded", function() {
     try {
         console.log("%cWorkForce2047 Partners LLP", "color: #D4A017; font-size: 24px; font-weight: bold;");
         console.log("%cProtected Intellectual Property. Unauthorized copying, scraping, or code reproduction is prohibited.", "color: #0B2E5C; font-size: 13px; font-weight: 600;");
-    } catch(err) {}
+    } catch (err) { }
 });
