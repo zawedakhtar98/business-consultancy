@@ -251,4 +251,122 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("%cWorkForce2047 Partners LLP", "color: #D4A017; font-size: 24px; font-weight: bold;");
         console.log("%cProtected Intellectual Property. Unauthorized copying, scraping, or code reproduction is prohibited.", "color: #0B2E5C; font-size: 13px; font-weight: 600;");
     } catch (err) { }
+
+    // =========================================================================
+    // IMPACT Value Cards Collapse Handlers (about.php)
+    // =========================================================================
+    const impactGrid = document.getElementById('impactValuesGrid');
+    if (impactGrid) {
+        const expandAllBtn = document.getElementById('expandAllValues');
+        const collapseAllBtn = document.getElementById('collapseAllValues');
+        const valueCollapseElements = impactGrid.querySelectorAll('.collapse');
+
+        if (expandAllBtn && typeof bootstrap !== 'undefined') {
+            expandAllBtn.addEventListener('click', function () {
+                valueCollapseElements.forEach(el => {
+                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
+                    bsCollapse.show();
+                });
+            });
+        }
+
+        if (collapseAllBtn && typeof bootstrap !== 'undefined') {
+            collapseAllBtn.addEventListener('click', function () {
+                valueCollapseElements.forEach(el => {
+                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
+                    bsCollapse.hide();
+                });
+            });
+        }
+
+        // Allow clicking anywhere on the card background to toggle if not interacting with body text
+        const valueCards = impactGrid.querySelectorAll('.value-card');
+        valueCards.forEach(card => {
+            card.addEventListener('click', function (e) {
+                // If clicked inside the collapsible text area or on a link/selection, do nothing
+                if (e.target.closest('.collapse') && !e.target.closest('.value-card-header')) {
+                    return;
+                }
+                // If clicked outside header, trigger header button
+                if (!e.target.closest('.value-card-header')) {
+                    const headerBtn = card.querySelector('.value-card-header');
+                    if (headerBtn) {
+                        headerBtn.click();
+                    }
+                }
+            });
+        });
+    }
+
+    // =========================================================================
+    // Detailed Sectors Collapse Handlers (sectors.php)
+    // =========================================================================
+    const sectorsGrid = document.getElementById('detailedSectorsGrid');
+    if (sectorsGrid) {
+        const expandAllSectorsBtn = document.getElementById('expandAllSectors');
+        const collapseAllSectorsBtn = document.getElementById('collapseAllSectors');
+        const sectorCollapseElements = sectorsGrid.querySelectorAll('.collapse');
+
+        if (expandAllSectorsBtn && typeof bootstrap !== 'undefined') {
+            expandAllSectorsBtn.addEventListener('click', function () {
+                sectorCollapseElements.forEach(el => {
+                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
+                    bsCollapse.show();
+                });
+            });
+        }
+
+        if (collapseAllSectorsBtn && typeof bootstrap !== 'undefined') {
+            collapseAllSectorsBtn.addEventListener('click', function () {
+                sectorCollapseElements.forEach(el => {
+                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
+                    bsCollapse.hide();
+                });
+            });
+        }
+
+        // Allow clicking anywhere on the card background to toggle if not interacting with body text
+        const sectorCards = sectorsGrid.querySelectorAll('.sector-detail-card');
+        sectorCards.forEach(card => {
+            card.addEventListener('click', function (e) {
+                // If clicked inside the collapsible text area or on a link/selection, do nothing
+                if (e.target.closest('.collapse') && !e.target.closest('.sector-card-header')) {
+                    return;
+                }
+                // If clicked outside header, trigger header button
+                if (!e.target.closest('.sector-card-header')) {
+                    const headerBtn = card.querySelector('.sector-card-header');
+                    if (headerBtn) {
+                        headerBtn.click();
+                    }
+                }
+            });
+        });
+
+        // Expand target sector when quick navigation pill or hash is clicked
+        const autoExpandSectorHash = function (hash) {
+            if (!hash) return;
+            const targetEl = document.querySelector(hash);
+            if (targetEl && targetEl.closest('#detailedSectorsGrid')) {
+                const collapseEl = targetEl.querySelector('.collapse');
+                if (collapseEl && typeof bootstrap !== 'undefined') {
+                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+                    bsCollapse.show();
+                }
+            }
+        };
+
+        // Quick navigation pill click listener
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function () {
+                const hash = this.getAttribute('href');
+                autoExpandSectorHash(hash);
+            });
+        });
+
+        // If URL already loaded with a hash
+        if (window.location.hash) {
+            autoExpandSectorHash(window.location.hash);
+        }
+    }
 });

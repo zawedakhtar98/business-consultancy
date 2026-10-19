@@ -112,61 +112,165 @@ include 'header.php';
             <div class="text-center mb-5">
                 <!-- <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Organizational DNA</span> -->
                 <h2 class="text-primary-navy mt-2 mb-3"> Core Values — <span class="text-accent-gold">IMPACT</span></h2>
-                <p class="text-muted mx-auto" style="max-width: 650px;">The principles guiding our relationships, decisions, and commitment to excellence.</p>
+                <p class="text-muted mx-auto mb-3" style="max-width: 650px;">The principles guiding our relationships, decisions, and commitment to excellence.</p>
+                <div class="d-inline-flex gap-2">
+                    <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1" id="expandAllValues" style="font-size: 0.82rem; border-color: rgba(11, 46, 92, 0.25); color: var(--primary-color);">
+                        <i class="fas fa-expand-alt me-1"></i> Expand All
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1" id="collapseAllValues" style="font-size: 0.82rem;">
+                        <i class="fas fa-compress-alt me-1"></i> Collapse All
+                    </button>
+                </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4" id="impactValuesGrid">
                 <!-- I -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <div class="value-letter">I</div>
-                        <h4>Integrity</h4>
-                        <p class="text-muted">Doing the right thing, with honesty, transparency, and respect at every step of our client and apprentice partnerships.</p>
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseValueI" 
+                                aria-expanded="false" 
+                                aria-controls="collapseValueI">
+                            <div>
+                                <div class="value-letter">I</div>
+                                <h4>Integrity</h4>
+                            </div>
+                            <span class="value-card-toggle" aria-hidden="true">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="collapse" id="collapseValueI">
+                            <div class="value-card-body pt-3 mt-3">
+                                <p class="text-muted mb-0">Doing the right thing, with honesty, transparency, and respect at every step of our client and apprentice partnerships.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- M -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <div class="value-letter">M</div>
-                        <h4>Measurable Outcomes</h4>
-                        <p class="text-muted">Turning individual contribution into meaningful, measurable impact and quantifiable cost advantages for your enterprise.</p>
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseValueM" 
+                                aria-expanded="false" 
+                                aria-controls="collapseValueM">
+                            <div>
+                                <div class="value-letter">M</div>
+                                <h4>Measurable Outcomes</h4>
+                            </div>
+                            <span class="value-card-toggle" aria-hidden="true">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="collapse" id="collapseValueM">
+                            <div class="value-card-body pt-3 mt-3">
+                                <p class="text-muted mb-0">Turning individual contribution into meaningful, measurable impact and quantifiable cost advantages for your enterprise.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- P -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <div class="value-letter">P</div>
-                        <h4>Partnership</h4>
-                        <p class="text-muted">Working together, valuing diverse perspectives, and succeeding as one unified team aligned to business targets.</p>
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseValueP" 
+                                aria-expanded="false" 
+                                aria-controls="collapseValueP">
+                            <div>
+                                <div class="value-letter">P</div>
+                                <h4>Partnership</h4>
+                            </div>
+                            <span class="value-card-toggle" aria-hidden="true">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="collapse" id="collapseValueP">
+                            <div class="value-card-body pt-3 mt-3">
+                                <p class="text-muted mb-0">Working together, valuing diverse perspectives, and succeeding as one unified team aligned to business targets.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- A -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <div class="value-letter">A</div>
-                        <h4>Accountability</h4>
-                        <p class="text-muted">Taking full ownership, delivering diligently on commitments, and continuously learning from every experience.</p>
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseValueA" 
+                                aria-expanded="false" 
+                                aria-controls="collapseValueA">
+                            <div>
+                                <div class="value-letter">A</div>
+                                <h4>Accountability</h4>
+                            </div>
+                            <span class="value-card-toggle" aria-hidden="true">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="collapse" id="collapseValueA">
+                            <div class="value-card-body pt-3 mt-3">
+                                <p class="text-muted mb-0">Taking full ownership, delivering diligently on commitments, and continuously learning from every experience.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- C -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <div class="value-letter">C</div>
-                        <h4>Continuous Growth</h4>
-                        <p class="text-muted">Investing in people, building capabilities, strengthening compliance, and creating lasting opportunities to thrive.</p>
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseValueC" 
+                                aria-expanded="false" 
+                                aria-controls="collapseValueC">
+                            <div>
+                                <div class="value-letter">C</div>
+                                <h4>Continuous Growth</h4>
+                            </div>
+                            <span class="value-card-toggle" aria-hidden="true">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="collapse" id="collapseValueC">
+                            <div class="value-card-body pt-3 mt-3">
+                                <p class="text-muted mb-0">Investing in people, building capabilities, strengthening compliance, and creating lasting opportunities to thrive.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- T -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <div class="value-letter">T</div>
-                        <h4>Transformation</h4>
-                        <p class="text-muted">Embracing technology, innovation, and change to build a resilient, future-ready workforce for 2047 and beyond.</p>
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseValueT" 
+                                aria-expanded="false" 
+                                aria-controls="collapseValueT">
+                            <div>
+                                <div class="value-letter">T</div>
+                                <h4>Transformation</h4>
+                            </div>
+                            <span class="value-card-toggle" aria-hidden="true">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                        <div class="collapse" id="collapseValueT">
+                            <div class="value-card-body pt-3 mt-3">
+                                <p class="text-muted mb-0">Embracing technology, innovation, and change to build a resilient, future-ready workforce for 2047 and beyond.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
