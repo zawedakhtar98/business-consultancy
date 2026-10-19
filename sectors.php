@@ -63,32 +63,17 @@ include 'header.php';
     <!-- All 13 Detailed Sectors Grid -->
     <section class="section-padding bg-light-gray" id="detailed-sectors">
         <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3">
-                <div>
-                    <h3 class="text-primary-navy fw-bold mb-1">Detailed Industry Sectors</h3>
-                    <p class="text-muted mb-0">Explore role mappings, key workforce areas, and government program advantages by sector.</p>
-                </div>
-                <div class="d-inline-flex gap-2">
-                    <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1" id="expandAllSectors" style="font-size: 0.82rem; border-color: rgba(11, 46, 92, 0.25); color: var(--primary-color);">
-                        <i class="fas fa-expand-alt me-1"></i> Expand All
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1" id="collapseAllSectors" style="font-size: 0.82rem;">
-                        <i class="fas fa-compress-alt me-1"></i> Collapse All
-                    </button>
-                </div>
-            </div>
-
             <div class="row g-4" id="detailedSectorsGrid">
 
                 <!-- 1. Manufacturing & Engineering -->
                 <div id="manufacturing" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorManufacturing" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorManufacturing">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorManufacturing"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorManufacturing">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">🏭</span>
                                 <div>
@@ -134,12 +119,12 @@ include 'header.php';
                 <!-- 2. Automotive & EV -->
                 <div id="automotive" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorAutomotive" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorAutomotive">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorAutomotive"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorAutomotive">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">🚗</span>
                                 <div>
@@ -186,12 +171,12 @@ include 'header.php';
                 <!-- 3. Renewable Energy & Solar -->
                 <div id="renewable" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorRenewable" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorRenewable">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorRenewable"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorRenewable">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">☀️</span>
                                 <div>
@@ -237,12 +222,12 @@ include 'header.php';
                 <!-- 4. IT / ITES / BPM -->
                 <div id="it" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorIt" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorIt">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorIt"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorIt">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">💻</span>
                                 <div>
@@ -288,12 +273,12 @@ include 'header.php';
                 <!-- 5. E-Commerce & Logistics -->
                 <div id="ecommerce" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorEcommerce" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorEcommerce">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorEcommerce"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorEcommerce">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">📦</span>
                                 <div>
@@ -339,12 +324,12 @@ include 'header.php';
                 <!-- 6. Retail -->
                 <div id="retail" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorRetail" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorRetail">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorRetail"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorRetail">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">🏪</span>
                                 <div>
@@ -390,12 +375,12 @@ include 'header.php';
                 <!-- 7. Healthcare & Allied Healthcare -->
                 <div id="healthcare" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorHealthcare" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorHealthcare">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorHealthcare"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorHealthcare">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">🏥</span>
                                 <div>
@@ -441,12 +426,12 @@ include 'header.php';
                 <!-- 8. Hospitality & Tourism -->
                 <div id="hospitality" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorHospitality" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorHospitality">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorHospitality"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorHospitality">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">🏨</span>
                                 <div>
@@ -492,12 +477,12 @@ include 'header.php';
                 <!-- 9. Drone & UAV -->
                 <div id="drone" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorDrone" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorDrone">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorDrone"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorDrone">
                             <div class="d-flex align-items-center me-2 flex-grow-1 min-w-0 sector-header-main">
                                 <span class="sector-icon-badge me-3 d-inline-flex align-items-center justify-content-center">
                                     <img src="images/icons/drone.png" alt="Drone &amp; UAV" width="44" height="44">
@@ -545,12 +530,12 @@ include 'header.php';
                 <!-- 10. Semiconductor & Electronics -->
                 <div id="semiconductor" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorSemiconductor" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorSemiconductor">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorSemiconductor"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorSemiconductor">
                             <div class="d-flex align-items-center me-2 flex-grow-1 min-w-0 sector-header-main">
                                 <span class="sector-icon-badge me-3 d-inline-flex align-items-center justify-content-center">
                                     <img src="images/icons/semiconductor.png" alt="Semiconductor &amp; Electronics" width="44" height="44">
@@ -598,12 +583,12 @@ include 'header.php';
                 <!-- 11. Aerospace & Defence Manufacturing -->
                 <div id="aerospace" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorAerospace" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorAerospace">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorAerospace"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorAerospace">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">✈️</span>
                                 <div>
@@ -649,12 +634,12 @@ include 'header.php';
                 <!-- 12. Construction & Infrastructure -->
                 <div id="construction" class="col-lg-6">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorConstruction" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorConstruction">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorConstruction"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorConstruction">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">🏗️</span>
                                 <div>
@@ -700,12 +685,12 @@ include 'header.php';
                 <!-- 13. BFSI & Business Services -->
                 <div id="bfsi" class="col-lg-12">
                     <div class="sector-detail-card">
-                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseSectorBfsi" 
-                                aria-expanded="false" 
-                                aria-controls="collapseSectorBfsi">
+                        <button class="sector-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSectorBfsi"
+                            aria-expanded="false"
+                            aria-controls="collapseSectorBfsi">
                             <div class="d-flex align-items-center me-3">
                                 <span class="sector-icon-badge me-3">🏦</span>
                                 <div>

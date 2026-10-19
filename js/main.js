@@ -59,29 +59,105 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Form Validation (if contact form exists)
+    // Contact Form AJAX Submission with Validation & Feedback
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            // Basic validation
+
+            const alertBox = document.getElementById('contactAlert');
+            const submitBtn = document.getElementById('submitBtn') || contactForm.querySelector('button[type="submit"]');
+            const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
+            const spinner = submitBtn ? submitBtn.querySelector('.spinner-border') : null;
+
+            // Reset alert
+            if (alertBox) {
+                alertBox.className = 'alert d-none mb-4';
+                alertBox.innerHTML = '';
+            }
+
+            // Client-side validation
             let isValid = true;
+            let firstInvalidField = null;
             const requiredFields = contactForm.querySelectorAll('[required]');
 
             requiredFields.forEach(field => {
-                if (!field.value.trim()) {
+                const val = field.value.trim();
+                let fieldValid = Boolean(val);
+
+                if (field.type === 'email' && val) {
+                    fieldValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+                }
+
+                if (field.type === 'tel' && val) {
+                    fieldValid = /^[0-9+\s\-().]{7,20}$/.test(val);
+                }
+
+                if (!fieldValid) {
                     isValid = false;
                     field.classList.add('is-invalid');
+                    if (!firstInvalidField) firstInvalidField = field;
                 } else {
                     field.classList.remove('is-invalid');
                 }
             });
 
-            if (isValid) {
-                // Placeholder for actual submission logic
-                alert('Thank you for your message. Our team will get back to you shortly.');
-                contactForm.reset();
+            if (!isValid) {
+                if (firstInvalidField) firstInvalidField.focus();
+                return;
             }
+
+            // Set loading state
+            if (submitBtn) submitBtn.disabled = true;
+            if (btnText) btnText.textContent = 'Submitting Request...';
+            if (spinner) spinner.classList.remove('d-none');
+
+            const formData = new FormData(contactForm);
+
+            fetch('contact-email-action.php', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(async response => {
+                const data = await response.json().catch(() => null);
+                if (!response.ok) {
+                    const errorMsg = (data && data.message) ? data.message : 'Server encountered an issue sending your message.';
+                    throw new Error(errorMsg);
+                }
+                return data;
+            })
+            .then(data => {
+                if (data && data.success) {
+                    if (alertBox) {
+                        alertBox.className = 'alert alert-success d-flex align-items-center mb-4';
+                        alertBox.innerHTML = `<i class="fas fa-check-circle fs-4 me-3 text-success"></i><div><strong>Inquiry Received!</strong><br>${data.message}</div>`;
+                    }
+                    contactForm.reset();
+                    // Remove all validation styling
+                    contactForm.querySelectorAll('.is-invalid, .is-valid').forEach(el => {
+                        el.classList.remove('is-invalid', 'is-valid');
+                    });
+                } else {
+                    throw new Error((data && data.message) ? data.message : 'Failed to send message.');
+                }
+            })
+            .catch(err => {
+                if (alertBox) {
+                    alertBox.className = 'alert alert-danger d-flex align-items-center mb-4';
+                    alertBox.innerHTML = `<i class="fas fa-exclamation-circle fs-4 me-3 text-danger"></i><div><strong>Submission Failed:</strong><br>${err.message}</div>`;
+                } else {
+                    alert('Submission Failed: ' + err.message);
+                }
+            })
+            .finally(() => {
+                // Restore button state
+                if (submitBtn) submitBtn.disabled = false;
+                if (btnText) btnText.textContent = 'Submit Request';
+                if (spinner) spinner.classList.add('d-none');
+            });
         });
     }
 
@@ -296,77 +372,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
-    }
-
-    // =========================================================================
-    // Detailed Sectors Collapse Handlers (sectors.php)
-    // =========================================================================
-    const sectorsGrid = document.getElementById('detailedSectorsGrid');
-    if (sectorsGrid) {
-        const expandAllSectorsBtn = document.getElementById('expandAllSectors');
-        const collapseAllSectorsBtn = document.getElementById('collapseAllSectors');
-        const sectorCollapseElements = sectorsGrid.querySelectorAll('.collapse');
-
-        if (expandAllSectorsBtn && typeof bootstrap !== 'undefined') {
-            expandAllSectorsBtn.addEventListener('click', function () {
-                sectorCollapseElements.forEach(el => {
-                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
-                    bsCollapse.show();
-                });
-            });
-        }
-
-        if (collapseAllSectorsBtn && typeof bootstrap !== 'undefined') {
-            collapseAllSectorsBtn.addEventListener('click', function () {
-                sectorCollapseElements.forEach(el => {
-                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
-                    bsCollapse.hide();
-                });
-            });
-        }
-
-        // Allow clicking anywhere on the card background to toggle if not interacting with body text
-        const sectorCards = sectorsGrid.querySelectorAll('.sector-detail-card');
-        sectorCards.forEach(card => {
-            card.addEventListener('click', function (e) {
-                // If clicked inside the collapsible text area or on a link/selection, do nothing
-                if (e.target.closest('.collapse') && !e.target.closest('.sector-card-header')) {
-                    return;
-                }
-                // If clicked outside header, trigger header button
-                if (!e.target.closest('.sector-card-header')) {
-                    const headerBtn = card.querySelector('.sector-card-header');
-                    if (headerBtn) {
-                        headerBtn.click();
-                    }
-                }
-            });
-        });
-
-        // Expand target sector when quick navigation pill or hash is clicked
-        const autoExpandSectorHash = function (hash) {
-            if (!hash) return;
-            const targetEl = document.querySelector(hash);
-            if (targetEl && targetEl.closest('#detailedSectorsGrid')) {
-                const collapseEl = targetEl.querySelector('.collapse');
-                if (collapseEl && typeof bootstrap !== 'undefined') {
-                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
-                    bsCollapse.show();
-                }
-            }
-        };
-
-        // Quick navigation pill click listener
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function () {
-                const hash = this.getAttribute('href');
-                autoExpandSectorHash(hash);
-            });
-        });
-
-        // If URL already loaded with a hash
-        if (window.location.hash) {
-            autoExpandSectorHash(window.location.hash);
-        }
     }
 });

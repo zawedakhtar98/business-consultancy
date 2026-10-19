@@ -31,34 +31,39 @@ include 'header.php';
                     <h2 class="text-primary-navy mt-1 mb-4">Connect to a Workforce Expert</h2>
                     <p class="text-muted mb-4"> A member of our workforce consulting team will contact you within 24 hours to commence your initial needs assessment.</p>
 
-                    <form id="contactForm" class="needs-validation" novalidate>
+                    <form id="contactForm" action="contact-email-action.php" method="POST" class="needs-validation" novalidate>
+                        <div id="contactAlert" class="alert d-none mb-4" role="alert"></div>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label fw-bold">Full Name *</label>
-                                <input type="text" class="form-control form-control-lg" id="name" placeholder="John Doe" required>
+                                <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="John Doe" required>
                                 <div class="invalid-feedback">Please provide your name.</div>
                             </div>
                             <div class="col-md-6">
                                 <label for="company" class="form-label fw-bold">Company Name *</label>
-                                <input type="text" class="form-control form-control-lg" id="company" placeholder="Organization Pvt Ltd" required>
+                                <input type="text" class="form-control form-control-lg" id="company" name="company" placeholder="Organization Pvt Ltd" required>
                                 <div class="invalid-feedback">Please provide your company name.</div>
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label fw-bold">Business Email *</label>
-                                <input type="email" class="form-control form-control-lg" id="email" placeholder="john@company.com" required>
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="john@company.com" required>
                                 <div class="invalid-feedback">Please provide a valid email.</div>
                             </div>
                             <div class="col-md-6">
                                 <label for="phone" class="form-label fw-bold">Phone Number *</label>
-                                <input type="tel" class="form-control form-control-lg" id="phone" placeholder="+91 98765 43210" required>
+                                <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                                <div class="invalid-feedback">Please provide a valid phone number.</div>
                             </div>
 
                             <div class="col-12">
                                 <label for="message" class="form-label fw-bold">Message / Specific Requirements</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your industry, locations, and workforce objectives..."></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about your industry, locations, and workforce objectives..."></textarea>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold fs-5">Submit Request</button>
+                                <button type="submit" id="submitBtn" class="btn btn-primary w-100 py-3 fw-bold fs-5 d-flex align-items-center justify-content-center">
+                                    <span class="btn-text">Submit Request</span>
+                                    <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                                </button>
                             </div>
                         </div>
                     </form>
