@@ -498,11 +498,11 @@ include 'header.php';
                                 data-bs-target="#collapseSectorDrone" 
                                 aria-expanded="false" 
                                 aria-controls="collapseSectorDrone">
-                            <div class="d-flex align-items-center me-3">
+                            <div class="d-flex align-items-center me-2 flex-grow-1 min-w-0 sector-header-main">
                                 <span class="sector-icon-badge me-3 d-inline-flex align-items-center justify-content-center">
-                                    <img src="images/icons/drone.png" alt="Drone &amp; UAV" style="width: 44px; height: 44px; object-fit: contain;">
+                                    <img src="images/icons/drone.png" alt="Drone &amp; UAV" width="44" height="44">
                                 </span>
-                                <div>
+                                <div class="flex-grow-1 min-w-0 sector-header-text">
                                     <h4 class="text-primary-navy mb-1 fw-bold">Drone &amp; UAV</h4>
                                     <div class="sector-subheading">Preparing Talent for India's Emerging Drone Economy</div>
                                 </div>
@@ -551,11 +551,11 @@ include 'header.php';
                                 data-bs-target="#collapseSectorSemiconductor" 
                                 aria-expanded="false" 
                                 aria-controls="collapseSectorSemiconductor">
-                            <div class="d-flex align-items-center me-3">
+                            <div class="d-flex align-items-center me-2 flex-grow-1 min-w-0 sector-header-main">
                                 <span class="sector-icon-badge me-3 d-inline-flex align-items-center justify-content-center">
-                                    <img src="images/icons/semiconductor.png" alt="Semiconductor &amp; Electronics" style="width: 44px; height: 44px; object-fit: contain;">
+                                    <img src="images/icons/semiconductor.png" alt="Semiconductor &amp; Electronics" width="44" height="44">
                                 </span>
-                                <div>
+                                <div class="flex-grow-1 min-w-0 sector-header-text">
                                     <h4 class="text-primary-navy mb-1 fw-bold">Semiconductor &amp; Electronics</h4>
                                     <div class="sector-subheading">Building India's Semiconductor Workforce</div>
                                 </div>
