@@ -1,4 +1,5 @@
 <?php
+
 /**
  * contact-email-action.php
  * Handles Direct Consultation inquiries from the Contact Us page (contact.php)
@@ -14,21 +15,21 @@ error_reporting(E_ALL);
 
 // Locate and load PHPMailer (supports vendor/PHPMailer or root PHPMailer)
 if (file_exists(__DIR__ . '/vendor/PHPMailer/PHPMailer.php')) {
-    require __DIR__ . '/vendor/PHPMailer/Exception.php';
-    require __DIR__ . '/vendor/PHPMailer/PHPMailer.php';
-    require __DIR__ . '/vendor/PHPMailer/SMTP.php';
+  require __DIR__ . '/vendor/PHPMailer/Exception.php';
+  require __DIR__ . '/vendor/PHPMailer/PHPMailer.php';
+  require __DIR__ . '/vendor/PHPMailer/SMTP.php';
 } elseif (file_exists(__DIR__ . '/PHPMailer/PHPMailer.php')) {
-    require __DIR__ . '/PHPMailer/Exception.php';
-    require __DIR__ . '/PHPMailer/PHPMailer.php';
-    require __DIR__ . '/PHPMailer/SMTP.php';
+  require __DIR__ . '/PHPMailer/Exception.php';
+  require __DIR__ . '/PHPMailer/PHPMailer.php';
+  require __DIR__ . '/PHPMailer/SMTP.php';
 } else {
-    http_response_code(500);
-    header('Content-Type: application/json; charset=UTF-8');
-    echo json_encode([
-        'success' => false,
-        'message' => 'Mailer library configuration missing. Please contact info@workforce2047.com directly.'
-    ]);
-    exit;
+  http_response_code(500);
+  header('Content-Type: application/json; charset=UTF-8');
+  echo json_encode([
+    'success' => false,
+    'message' => 'Mailer library configuration missing. Please contact info@workforce2047partners.com directly.'
+  ]);
+  exit;
 }
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -42,17 +43,17 @@ header('Content-Type: application/json; charset=UTF-8');
 // ------------------------------------------------------------------
 
 // Where direct consultation inquiries should land
-$RECIPIENT_EMAIL = "info@workforce2047.com";
+$RECIPIENT_EMAIL = "info@workforce2047partners.com";
 $RECIPIENT_NAME  = "WorkForce2047 Advisory Team";
 
 // Sender identity
-$FROM_EMAIL      = "no-reply@workforce2047.com";
+$FROM_EMAIL      = "info@workforce2047partners.com";
 $FROM_NAME       = "WorkForce2047 Contact Inquiries";
 
 // Office & support details
 $COMPANY_NAME    = "WorkForce2047 Partners LLP";
 $OFFICE_LOCATION = "Bengaluru (HO)";
-$WEBSITE_URL     = "https://workforce2047.com";
+$WEBSITE_URL     = "https://workforce2047partners.com/";
 
 // --- SMTP credentials (configured with Mailtrap for testing, switch to production as needed) ---
 $MAILTRAP_HOST     = "sandbox.smtp.mailtrap.io";
@@ -64,19 +65,20 @@ $MAILTRAP_PASSWORD = "3519f33fdd1ef3";
 // 1. ONLY ACCEPT POST REQUESTS
 // ------------------------------------------------------------------
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo json_encode([
-        'success' => false,
-        'message' => 'Method Not Allowed. Please submit the form.'
-    ]);
-    exit;
+  http_response_code(405);
+  echo json_encode([
+    'success' => false,
+    'message' => 'Method Not Allowed. Please submit the form.'
+  ]);
+  exit;
 }
 
 // ------------------------------------------------------------------
 // 2. SANITIZE INCOMING INPUTS
 // ------------------------------------------------------------------
-function clean_field($value) {
-    return htmlspecialchars(trim((string)$value), ENT_QUOTES, 'UTF-8');
+function clean_field($value)
+{
+  return htmlspecialchars(trim((string)$value), ENT_QUOTES, 'UTF-8');
 }
 
 $name    = clean_field($_POST['name'] ?? '');
@@ -91,35 +93,35 @@ $message = clean_field($_POST['message'] ?? '');
 $errors = [];
 
 if ($name === '') {
-    $errors[] = 'Full name is required.';
+  $errors[] = 'Full name is required.';
 } elseif (mb_strlen($name) < 2 || mb_strlen($name) > 100) {
-    $errors[] = 'Full name must be between 2 and 100 characters.';
+  $errors[] = 'Full name must be between 2 and 100 characters.';
 }
 
 if ($company === '') {
-    $errors[] = 'Company name is required.';
+  $errors[] = 'Company name is required.';
 } elseif (mb_strlen($company) < 2 || mb_strlen($company) > 150) {
-    $errors[] = 'Company name must be between 2 and 150 characters.';
+  $errors[] = 'Company name must be between 2 and 150 characters.';
 }
 
 if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $errors[] = 'Please provide a valid business email address.';
+  $errors[] = 'Please provide a valid business email address.';
 }
 
 if ($phone === '') {
-    $errors[] = 'Phone number is required.';
+  $errors[] = 'Phone number is required.';
 } elseif (!preg_match('/^[0-9+\s\-().]{7,20}$/', $phone)) {
-    $errors[] = 'Please enter a valid phone number (7 to 20 digits).';
+  $errors[] = 'Please enter a valid phone number (7 to 20 digits).';
 }
 
 if (!empty($errors)) {
-    http_response_code(422);
-    echo json_encode([
-        'success' => false,
-        'message' => implode(' ', $errors),
-        'errors'  => $errors
-    ]);
-    exit;
+  http_response_code(422);
+  echo json_encode([
+    'success' => false,
+    'message' => implode(' ', $errors),
+    'errors'  => $errors
+  ]);
+  exit;
 }
 
 // Metadata for the inquiry
@@ -341,41 +343,40 @@ TEXT;
 $mail = new PHPMailer(true);
 
 try {
-    // Server settings
-    $mail->isSMTP();
-    $mail->Host       = $MAILTRAP_HOST;
-    $mail->SMTPAuth   = true;
-    $mail->Username   = $MAILTRAP_USERNAME;
-    $mail->Password   = $MAILTRAP_PASSWORD;
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = $MAILTRAP_PORT;
-    $mail->CharSet    = 'UTF-8';
+  // Server settings
+  $mail->isSMTP();
+  $mail->Host       = $MAILTRAP_HOST;
+  $mail->SMTPAuth   = true;
+  $mail->Username   = $MAILTRAP_USERNAME;
+  $mail->Password   = $MAILTRAP_PASSWORD;
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  $mail->Port       = $MAILTRAP_PORT;
+  $mail->CharSet    = 'UTF-8';
 
-    // Recipients
-    $mail->setFrom($FROM_EMAIL, $FROM_NAME);
-    $mail->addAddress($RECIPIENT_EMAIL, $RECIPIENT_NAME);
-    // Setting Reply-To as the client allows direct email reply to the prospective client
-    $mail->addReplyTo($email, $name);
+  // Recipients
+  $mail->setFrom($FROM_EMAIL, $FROM_NAME);
+  $mail->addAddress($RECIPIENT_EMAIL, $RECIPIENT_NAME);
+  // Setting Reply-To as the client allows direct email reply to the prospective client
+  $mail->addReplyTo($email, $name);
 
-    // Content
-    $mail->isHTML(true);
-    $mail->Subject = $subject;
-    $mail->Body    = $htmlBody;
-    $mail->AltBody = $textBody;
+  // Content
+  $mail->isHTML(true);
+  $mail->Subject = $subject;
+  $mail->Body    = $htmlBody;
+  $mail->AltBody = $textBody;
 
-    $mail->send();
+  $mail->send();
 
-    echo json_encode([
-        'success' => true,
-        'message' => "Thank you, {$name}. Your consultation request has been received. A workforce expert will connect with you within 24 hours.",
-        'ref_id'  => $inquiryId
-    ]);
-
+  echo json_encode([
+    'success' => true,
+    'message' => "Thank you, {$name}. Your consultation request has been received. A workforce expert will connect with you within 24 hours.",
+    'ref_id'  => $inquiryId
+  ]);
 } catch (Exception $e) {
-    http_response_code(500);
-    echo json_encode([
-        'success' => false,
-        'message' => "We were unable to transmit your request automatically. Please email us directly at {$RECIPIENT_EMAIL}.",
-        'debug'   => $mail->ErrorInfo
-    ]);
+  http_response_code(500);
+  echo json_encode([
+    'success' => false,
+    'message' => "We were unable to transmit your request automatically. Please email us directly at {$RECIPIENT_EMAIL}.",
+    'debug'   => $mail->ErrorInfo
+  ]);
 }

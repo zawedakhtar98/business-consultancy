@@ -43,7 +43,7 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <h5>Contact Us</h5>
                     <ul class="text-white-50">
-                        <li class="mb-2"><i class="fas fa-envelope me-2 text-accent-gold"></i> info@workforce2047.com</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 text-accent-gold"></i> info@workforce2047partners.com</li>
                         <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-accent-gold"></i> Bengaluru (HO)</li>
                     </ul>
                     <div class="social-icons">

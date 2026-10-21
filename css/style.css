@@ -183,6 +183,7 @@ h6,
 
 .navbar .container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -1045,6 +1046,8 @@ div.position-relative[style*="height"]:first-of-type .lead {
     margin-top: 0.75rem;
     max-height: 80vh;
     overflow-y: auto;
+    width: 100%;
+    flex-basis: 100%;
   }
 
   .navbar-nav {
@@ -1110,7 +1113,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
   }
 
   .display-6 {
-    font-size: 1.3rem !important;
+    font-size: 1.35rem !important;
   }
 
   /* Process steps: eliminate connecting line to avoid overflow */
@@ -1135,6 +1138,11 @@ div.position-relative[style*="height"]:first-of-type .lead {
     align-items: center;
     max-width: calc(100% - 54px);
     margin-right: 0;
+  }
+
+  .city-img-wrapper {
+    width: 150px !important;
+    height: 150px !important;
   }
 
   .navbar-brand img {
@@ -1185,7 +1193,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
   h3,
   .h3,
   .display-6 {
-    font-size: 1.05rem !important;
+    font-size: 1.35rem !important;
     line-height: 1.32 !important;
   }
 
@@ -1296,7 +1304,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -1304,9 +1312,10 @@ div.position-relative[style*="height"]:first-of-type .lead {
   .navbar-brand {
     display: inline-flex;
     align-items: center;
-    flex-shrink: 1;
+    flex: 1 1 auto;
     min-width: 0;
-    margin-right: 0.5rem;
+    max-width: calc(100% - 54px);
+    margin-right: 0;
   }
 
   .navbar-brand img {
@@ -1363,7 +1372,7 @@ div.position-relative[style*="height"]:first-of-type .lead {
   h3,
   .h3,
   .display-6 {
-    font-size: 1.02rem !important;
+    font-size: 1.35rem !important;
   }
 
   .hero-headline {

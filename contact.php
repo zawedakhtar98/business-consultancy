@@ -78,7 +78,7 @@ include 'header.php';
                             <div class="text-accent-gold me-3 fs-3"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <h6 class="mb-1 text-primary-navy fw-bold">Email ID</h6>
-                                <p class="mb-0"><a href="mailto:info@workforce2047.com" class="text-decoration-none text-dark fw-semibold">info@workforce2047.com</a></p>
+                                <p class="mb-0"><a href="mailto:info@workforce2047partners.com" class="text-decoration-none text-dark fw-semibold">info@workforce2047partners.com</a></p>
                             </div>
                         </div>
 

@@ -99,7 +99,7 @@ $seo_keywords = !empty($page_keywords) ? $page_keywords : $default_keywords;
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=<?= filemtime(__DIR__ . '/css/style.css') ?>" rel="stylesheet">
 </head>
 
 <body>
