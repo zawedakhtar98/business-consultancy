@@ -56,10 +56,14 @@ $OFFICE_LOCATION = "Bengaluru (HO)";
 $WEBSITE_URL     = "https://workforce2047partners.com/";
 
 // --- SMTP credentials (configured with Mailtrap for testing, switch to production as needed) ---
-$MAILTRAP_HOST     = "sandbox.smtp.mailtrap.io";
+$MAILTRAP_HOST     = "smtp.stackmail.com";
 $MAILTRAP_PORT     = 587;
-$MAILTRAP_USERNAME = "75b93f50b1345d";
-$MAILTRAP_PASSWORD = "3519f33fdd1ef3";
+$MAILTRAP_USERNAME = "info@workforce2047partners.com";
+$MAILTRAP_PASSWORD = "****";
+// $MAILTRAP_HOST     = "sandbox.smtp.mailtrap.io";
+// $MAILTRAP_PORT     = 587;
+// $MAILTRAP_USERNAME = "75b93f50b1345d";
+// $MAILTRAP_PASSWORD = "3519f33fdd1ef3";
 
 // ------------------------------------------------------------------
 // 1. ONLY ACCEPT POST REQUESTS
@@ -293,10 +297,10 @@ $htmlBody = <<<HTML
               <p style="margin: 0 0 10px 0; font-size: 12px; color: #94A3B8; line-height: 1.5;">
                 {$OFFICE_LOCATION}, India &bull;
                 <a href="mailto:{$RECIPIENT_EMAIL}" style="color: #D4A017; text-decoration: none;">{$RECIPIENT_EMAIL}</a> &bull;
-                <a href="{$WEBSITE_URL}" style="color: #D4A017; text-decoration: none;">workforce2047.com</a>
+                <a href="{$WEBSITE_URL}" style="color: #D4A017; text-decoration: none;">{$WEBSITE_URL}</a>
               </p>
               <p style="margin: 0; font-size: 11px; color: #64748B;">
-                This is an automated dispatch from the Contact Us form on workforce2047.com.
+                This is an automated dispatch from the Contact Us form on {$WEBSITE_URL}.
               </p>
             </td>
           </tr>
@@ -349,6 +353,7 @@ try {
   $mail->SMTPAuth   = true;
   $mail->Username   = $MAILTRAP_USERNAME;
   $mail->Password   = $MAILTRAP_PASSWORD;
+  // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port       = $MAILTRAP_PORT;
   $mail->CharSet    = 'UTF-8';
@@ -356,6 +361,7 @@ try {
   // Recipients
   $mail->setFrom($FROM_EMAIL, $FROM_NAME);
   $mail->addAddress($RECIPIENT_EMAIL, $RECIPIENT_NAME);
+  $mail->addAddress($email, $RECIPIENT_NAME);
   // Setting Reply-To as the client allows direct email reply to the prospective client
   $mail->addReplyTo($email, $name);
 
