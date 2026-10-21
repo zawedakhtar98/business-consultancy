@@ -16,7 +16,7 @@ include 'header.php';
                         <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
                     </ol>
                 </nav>
-                <h1 class="display-4 fw-bold text-white mb-2">About WorkForce2047 Partners</h1>
+                <h1 class="display-4 fw-bold text-white mb-2">About WorkForce 2047 Partners LLP</h1>
                 <p class="lead text-white-50" style="max-width: 750px;">Compliance. Strategy. Skilled Talent. Built for India's MSMEs.</p>
             </div>
         </div>
@@ -113,26 +113,18 @@ include 'header.php';
                 <!-- <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Organizational DNA</span> -->
                 <h2 class="text-primary-navy mt-2 mb-3"> Core Values — <span class="text-accent-gold">IMPACT</span></h2>
                 <p class="text-muted mx-auto mb-3" style="max-width: 650px;">The principles guiding our relationships, decisions, and commitment to excellence.</p>
-                <div class="d-inline-flex gap-2">
-                    <button type="button" class="btn btn-sm btn-outline-primary rounded-pill px-3 py-1" id="expandAllValues" style="font-size: 0.82rem; border-color: rgba(11, 46, 92, 0.25); color: var(--primary-color);">
-                        <i class="fas fa-expand-alt me-1"></i> Expand All
-                    </button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1" id="collapseAllValues" style="font-size: 0.82rem;">
-                        <i class="fas fa-compress-alt me-1"></i> Collapse All
-                    </button>
-                </div>
             </div>
 
             <div class="row g-4" id="impactValuesGrid">
                 <!-- I -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseValueI" 
-                                aria-expanded="false" 
-                                aria-controls="collapseValueI">
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseValueI"
+                            aria-expanded="false"
+                            aria-controls="collapseValueI">
                             <div>
                                 <div class="value-letter">I</div>
                                 <h4>Integrity</h4>
@@ -152,12 +144,12 @@ include 'header.php';
                 <!-- M -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseValueM" 
-                                aria-expanded="false" 
-                                aria-controls="collapseValueM">
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseValueM"
+                            aria-expanded="false"
+                            aria-controls="collapseValueM">
                             <div>
                                 <div class="value-letter">M</div>
                                 <h4>Measurable Outcomes</h4>
@@ -177,12 +169,12 @@ include 'header.php';
                 <!-- P -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseValueP" 
-                                aria-expanded="false" 
-                                aria-controls="collapseValueP">
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseValueP"
+                            aria-expanded="false"
+                            aria-controls="collapseValueP">
                             <div>
                                 <div class="value-letter">P</div>
                                 <h4>Partnership</h4>
@@ -202,12 +194,12 @@ include 'header.php';
                 <!-- A -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseValueA" 
-                                aria-expanded="false" 
-                                aria-controls="collapseValueA">
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseValueA"
+                            aria-expanded="false"
+                            aria-controls="collapseValueA">
                             <div>
                                 <div class="value-letter">A</div>
                                 <h4>Accountability</h4>
@@ -227,12 +219,12 @@ include 'header.php';
                 <!-- C -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseValueC" 
-                                aria-expanded="false" 
-                                aria-controls="collapseValueC">
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseValueC"
+                            aria-expanded="false"
+                            aria-controls="collapseValueC">
                             <div>
                                 <div class="value-letter">C</div>
                                 <h4>Continuous Growth</h4>
@@ -252,12 +244,12 @@ include 'header.php';
                 <!-- T -->
                 <div class="col-lg-4 col-md-6">
                     <div class="value-card">
-                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start" 
-                                type="button" 
-                                data-bs-toggle="collapse" 
-                                data-bs-target="#collapseValueT" 
-                                aria-expanded="false" 
-                                aria-controls="collapseValueT">
+                        <button class="value-card-header collapsed d-flex justify-content-between align-items-center text-start"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseValueT"
+                            aria-expanded="false"
+                            aria-controls="collapseValueT">
                             <div>
                                 <div class="value-letter">T</div>
                                 <h4>Transformation</h4>
@@ -282,7 +274,7 @@ include 'header.php';
         <div class="container">
             <div class="text-center mb-5">
                 <span class="text-accent-gold fw-bold text-uppercase tracking-wide">Strategic Human Capital Partner</span>
-                <h2 class="mt-2 mb-3 display-6 fw-bold text-primary-navy">Why <span class="text-primary-navy">WorkForce</span><span class="text-accent-gold">2047</span> Partners?</h2>
+                <h2 class="mt-2 mb-3 display-6 fw-bold text-primary-navy">Why <span class="text-primary-navy">WorkForce</span><span class="text-accent-gold"> 2047 </span> Partners?</h2>
                 <h4 class="text-muted fw-normal">Because workforce transformation needs more than manpower.</h4>
             </div>
 

@@ -380,7 +380,7 @@ h6,
 }
 
 .hero-headline {
-  font-size: clamp(1.85rem, 3.4vw + 0.3rem, 3.35rem);
+  font-size: clamp(1.85rem, 3.4vw + 0.3rem, 2.35rem);
   font-weight: 800;
   margin-bottom: 1.25rem;
   color: var(--white);

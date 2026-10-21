@@ -121,43 +121,43 @@ document.addEventListener("DOMContentLoaded", function () {
                     'X-Requested-With': 'XMLHttpRequest'
                 }
             })
-            .then(async response => {
-                const data = await response.json().catch(() => null);
-                if (!response.ok) {
-                    const errorMsg = (data && data.message) ? data.message : 'Server encountered an issue sending your message.';
-                    throw new Error(errorMsg);
-                }
-                return data;
-            })
-            .then(data => {
-                if (data && data.success) {
-                    if (alertBox) {
-                        alertBox.className = 'alert alert-success d-flex align-items-center mb-4';
-                        alertBox.innerHTML = `<i class="fas fa-check-circle fs-4 me-3 text-success"></i><div><strong>Inquiry Received!</strong><br>${data.message}</div>`;
+                .then(async response => {
+                    const data = await response.json().catch(() => null);
+                    if (!response.ok) {
+                        const errorMsg = (data && data.message) ? data.message : 'Server encountered an issue sending your message.';
+                        throw new Error(errorMsg);
                     }
-                    contactForm.reset();
-                    // Remove all validation styling
-                    contactForm.querySelectorAll('.is-invalid, .is-valid').forEach(el => {
-                        el.classList.remove('is-invalid', 'is-valid');
-                    });
-                } else {
-                    throw new Error((data && data.message) ? data.message : 'Failed to send message.');
-                }
-            })
-            .catch(err => {
-                if (alertBox) {
-                    alertBox.className = 'alert alert-danger d-flex align-items-center mb-4';
-                    alertBox.innerHTML = `<i class="fas fa-exclamation-circle fs-4 me-3 text-danger"></i><div><strong>Submission Failed:</strong><br>${err.message}</div>`;
-                } else {
-                    alert('Submission Failed: ' + err.message);
-                }
-            })
-            .finally(() => {
-                // Restore button state
-                if (submitBtn) submitBtn.disabled = false;
-                if (btnText) btnText.textContent = 'Submit Request';
-                if (spinner) spinner.classList.add('d-none');
-            });
+                    return data;
+                })
+                .then(data => {
+                    if (data && data.success) {
+                        if (alertBox) {
+                            alertBox.className = 'alert alert-success d-flex align-items-center mb-4';
+                            alertBox.innerHTML = `<i class="fas fa-check-circle fs-4 me-3 text-success"></i><div><strong>Inquiry Received!</strong><br>${data.message}</div>`;
+                        }
+                        contactForm.reset();
+                        // Remove all validation styling
+                        contactForm.querySelectorAll('.is-invalid, .is-valid').forEach(el => {
+                            el.classList.remove('is-invalid', 'is-valid');
+                        });
+                    } else {
+                        throw new Error((data && data.message) ? data.message : 'Failed to send message.');
+                    }
+                })
+                .catch(err => {
+                    if (alertBox) {
+                        alertBox.className = 'alert alert-danger d-flex align-items-center mb-4';
+                        alertBox.innerHTML = `<i class="fas fa-exclamation-circle fs-4 me-3 text-danger"></i><div><strong>Submission Failed:</strong><br>${err.message}</div>`;
+                    } else {
+                        alert('Submission Failed: ' + err.message);
+                    }
+                })
+                .finally(() => {
+                    // Restore button state
+                    if (submitBtn) submitBtn.disabled = false;
+                    if (btnText) btnText.textContent = 'Submit Request';
+                    if (spinner) spinner.classList.add('d-none');
+                });
         });
     }
 
@@ -328,49 +328,4 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("%cProtected Intellectual Property. Unauthorized copying, scraping, or code reproduction is prohibited.", "color: #0B2E5C; font-size: 13px; font-weight: 600;");
     } catch (err) { }
 
-    // =========================================================================
-    // IMPACT Value Cards Collapse Handlers (about.php)
-    // =========================================================================
-    const impactGrid = document.getElementById('impactValuesGrid');
-    if (impactGrid) {
-        const expandAllBtn = document.getElementById('expandAllValues');
-        const collapseAllBtn = document.getElementById('collapseAllValues');
-        const valueCollapseElements = impactGrid.querySelectorAll('.collapse');
-
-        if (expandAllBtn && typeof bootstrap !== 'undefined') {
-            expandAllBtn.addEventListener('click', function () {
-                valueCollapseElements.forEach(el => {
-                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
-                    bsCollapse.show();
-                });
-            });
-        }
-
-        if (collapseAllBtn && typeof bootstrap !== 'undefined') {
-            collapseAllBtn.addEventListener('click', function () {
-                valueCollapseElements.forEach(el => {
-                    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, { toggle: false });
-                    bsCollapse.hide();
-                });
-            });
-        }
-
-        // Allow clicking anywhere on the card background to toggle if not interacting with body text
-        const valueCards = impactGrid.querySelectorAll('.value-card');
-        valueCards.forEach(card => {
-            card.addEventListener('click', function (e) {
-                // If clicked inside the collapsible text area or on a link/selection, do nothing
-                if (e.target.closest('.collapse') && !e.target.closest('.value-card-header')) {
-                    return;
-                }
-                // If clicked outside header, trigger header button
-                if (!e.target.closest('.value-card-header')) {
-                    const headerBtn = card.querySelector('.value-card-header');
-                    if (headerBtn) {
-                        headerBtn.click();
-                    }
-                }
-            });
-        });
-    }
 });

@@ -25,8 +25,8 @@ include 'header.php';
                                 <h1 class="hero-headline">Workforce Solutions Designed for <span>Modern Businesses</span></h1>
                                 <p class="hero-subheadline">Organizations today face increasing pressure to attract skilled talent, control workforce costs, and maintain statutory compliance. WorkForce2047 Partners bridges this gap by delivering practical workforce solutions backed by deep industry expertise and IIM alumni leadership.</p>
                                 <div class="d-flex gap-3 flex-wrap hero-btn-group">
-                                    <a href="contact.php" class="btn btn-accent btn-lg px-4 py-3">Talk to Our Experts</a>
-                                    <a href="services.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Explore Our Services</a>
+                                    <!-- <a href="contact.php" class="btn btn-accent btn-lg px-4 py-3">Talk to Our Experts</a> -->
+                                    <a href="services.php" class="btn btn-accent btn-lg px-4 py-3">Explore Our Services</a>
                                 </div>
                             </div>
                         </div>
@@ -78,8 +78,7 @@ include 'header.php';
                                 <h1 class="hero-headline">Strategic Workforce Advisory for Sustainable <span>Growth</span></h1>
                                 <p class="hero-subheadline">From HR policy design and management development to performance systems, business expansion, and growth strategy, we guide organizations at every stage of scale.</p>
                                 <div class="d-flex gap-3 flex-wrap hero-btn-group">
-                                    <a href="sectors.php" class="btn btn-accent btn-lg px-4 py-3">Explore Industry Sectors</a>
-                                    <a href="contact.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Consult Our Specialists</a>
+                                    <a href="sectors.php" class="btn btn-accent btn-lg px-4 py-3">Explore</a>
                                 </div>
                             </div>
                         </div>
@@ -96,7 +95,7 @@ include 'header.php';
                                 <h1 class="hero-headline">Flexible Contract Staffing &amp; <span>Payroll Management</span></h1>
                                 <p class="hero-subheadline">Scale your workforce on demand with 100% compliant contract staffing and error-free payroll processing. Rapid pan-India onboarding, rigorous statutory administration, and dedicated HR advisory.</p>
                                 <div class="d-flex gap-3 flex-wrap hero-btn-group">
-                                    <a href="service-staffing.php" class="btn btn-accent btn-lg px-4 py-3">Explore Contract Staffing</a>
+                                    <a href="service-staffing.php" class="btn btn-accent btn-lg px-4 py-3">Explore</a>
                                     <a href="service-payroll.php" class="btn btn-outline-light btn-lg px-4 py-3 border-2">Payroll &amp; Advisory</a>
                                 </div>
                             </div>

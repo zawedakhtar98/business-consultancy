@@ -304,11 +304,11 @@ include 'header.php';
                         <!-- Q1 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Is Apprenticeship Training mandated under the Act?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#apprenticeshipFaq">
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#apprenticeshipFaq">
                                 <div class="accordion-body">
                                     <strong>Yes.</strong> Under the Apprentices Act, 1961:
                                     <ul class="mt-2 mb-1 ps-3">
