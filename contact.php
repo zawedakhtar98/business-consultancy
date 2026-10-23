@@ -47,12 +47,12 @@ include 'header.php';
                             <div class="col-md-6">
                                 <label for="email" class="form-label fw-bold">Business Email *</label>
                                 <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="john@company.com" required>
-                                <div class="invalid-feedback">Please provide a valid email.</div>
+                                <div class="invalid-feedback" id="emailFeedback">Please provide a valid email address.</div>
                             </div>
                             <div class="col-md-6">
-                                <label for="phone" class="form-label fw-bold">Phone Number *</label>
-                                <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="+91 98765 43210" required>
-                                <div class="invalid-feedback">Please provide a valid phone number.</div>
+                                <label for="phone" class="form-label fw-bold">Mobile Number *</label>
+                                <input type="tel" class="form-control form-control-lg" id="phone" name="phone" placeholder="Enter 10-digit mobile number" maxlength="10" minlength="10" pattern="[0-9]{10}" inputmode="numeric" required>
+                                <div class="invalid-feedback" id="phoneFeedback">Please enter a valid 10-digit mobile number (numbers only).</div>
                             </div>
 
                             <div class="col-12">

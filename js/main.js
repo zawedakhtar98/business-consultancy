@@ -62,6 +62,78 @@ document.addEventListener("DOMContentLoaded", function () {
     // Contact Form AJAX Submission with Validation & Feedback
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
+        const phoneInput = document.getElementById('phone');
+        const emailInput = document.getElementById('email');
+
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const phoneRegex = /^[0-9]{10}$/;
+
+        // Restrict phone input to numbers only and maximum 10 digits
+        if (phoneInput) {
+            // Prevent typing non-numeric characters
+            phoneInput.addEventListener('keydown', function (e) {
+                // Allow control keys: Backspace, Delete, Tab, Escape, Enter, Arrow keys, Home, End
+                const allowedKeys = ['Backspace', 'Delete', 'Tab', 'Escape', 'Enter', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'];
+                if (allowedKeys.includes(e.key) || e.ctrlKey || e.metaKey) {
+                    return;
+                }
+                // Block any key that is not a numeric digit 0-9
+                if (!/^[0-9]$/.test(e.key)) {
+                    e.preventDefault();
+                }
+            });
+
+            // Sanitize pasted or typed input to digits only & max 10 digits
+            phoneInput.addEventListener('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
+                if (this.value.length === 10) {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                } else if (this.value.length > 0) {
+                    this.classList.add('is-invalid');
+                    this.classList.remove('is-valid');
+                } else {
+                    this.classList.remove('is-invalid', 'is-valid');
+                }
+            });
+
+            // Validate on blur
+            phoneInput.addEventListener('blur', function () {
+                const val = this.value.trim();
+                if (!phoneRegex.test(val)) {
+                    this.classList.add('is-invalid');
+                    this.classList.remove('is-valid');
+                } else {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                }
+            });
+        }
+
+        // Live validation for email
+        if (emailInput) {
+            emailInput.addEventListener('input', function () {
+                const val = this.value.trim();
+                if (val.length === 0) {
+                    this.classList.remove('is-invalid', 'is-valid');
+                } else if (emailRegex.test(val)) {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                }
+            });
+
+            emailInput.addEventListener('blur', function () {
+                const val = this.value.trim();
+                if (val && !emailRegex.test(val)) {
+                    this.classList.add('is-invalid');
+                    this.classList.remove('is-valid');
+                } else if (val && emailRegex.test(val)) {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                }
+            });
+        }
+
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
@@ -85,20 +157,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 const val = field.value.trim();
                 let fieldValid = Boolean(val);
 
-                if (field.type === 'email' && val) {
-                    fieldValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+                if ((field.type === 'email' || field.id === 'email') && val) {
+                    fieldValid = emailRegex.test(val);
                 }
 
-                if (field.type === 'tel' && val) {
-                    fieldValid = /^[0-9+\s\-().]{7,20}$/.test(val);
+                if ((field.type === 'tel' || field.id === 'phone') && val) {
+                    fieldValid = phoneRegex.test(val);
                 }
 
                 if (!fieldValid) {
                     isValid = false;
                     field.classList.add('is-invalid');
+                    field.classList.remove('is-valid');
                     if (!firstInvalidField) firstInvalidField = field;
                 } else {
                     field.classList.remove('is-invalid');
+                    field.classList.add('is-valid');
                 }
             });
 

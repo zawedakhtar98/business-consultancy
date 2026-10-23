@@ -108,14 +108,14 @@ if ($company === '') {
   $errors[] = 'Company name must be between 2 and 150 characters.';
 }
 
-if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || !preg_match('/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $email)) {
   $errors[] = 'Please provide a valid business email address.';
 }
 
 if ($phone === '') {
-  $errors[] = 'Phone number is required.';
-} elseif (!preg_match('/^[0-9+\s\-().]{7,20}$/', $phone)) {
-  $errors[] = 'Please enter a valid phone number (7 to 20 digits).';
+  $errors[] = 'Mobile number is required.';
+} elseif (!preg_match('/^[0-9]{10}$/', $phone)) {
+  $errors[] = 'Please enter a valid 10-digit mobile number containing numbers only.';
 }
 
 if (!empty($errors)) {
@@ -243,7 +243,7 @@ $htmlBody = <<<HTML
                 </tr>
                 <tr>
                   <td style="padding: 12px 16px; color: #64748B; font-weight: 600;">
-                    Phone Number
+                    Mobile Number
                   </td>
                   <td style="padding: 12px 16px;">
                     <a href="tel:{$cleanPhoneForTel}" style="color: #0B2E5C; font-weight: 600; text-decoration: none;">
